@@ -82,4 +82,4 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="homescherm2" width="375px" alt="Interface Homescherm">
+<img src="homescherm2.png" width="375px" alt="Interface Homescherm">

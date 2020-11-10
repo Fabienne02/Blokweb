@@ -78,8 +78,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="Homescherm.svg" width="375px" alt="Interface Homescherm">
+<img src="homescherm.png" width="375px" alt="Interface Homescherm">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="Boodschappen_lijstje_1.svg" width="375px" alt="Interface scherm boodschappenlijst">
+<img src="homescherm2" width="375px" alt="Interface Homescherm">

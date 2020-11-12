@@ -63,7 +63,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Breakdownschets (week 1)
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
-<img src="Breakout schets.png" width="375px" alt="Breakdownschets Homescherm"> 
+<img src="images/Breakout schets.png" width="375px" alt="Breakdownschets Homescherm"> 
 
 
 
@@ -78,8 +78,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="homescherm.png" width="375px" alt="Interface Homescherm">
+<img src="images/homescherm.png" width="375px" alt="Interface Homescherm">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="homescherm 2.png" width="375px" alt="Interface Homescherm">
+<img src="images/homescherm 2.png" width="375px" alt="Interface Homescherm">

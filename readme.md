@@ -38,7 +38,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Wat goed ging was Flexbox en en :Hover maakte de site echt lijken op de orginele.
+Wat minder goed ging was het gebruik van divjes en veeel veeeeeel classes.
 
 **Screenshot(s):**
 
@@ -50,13 +51,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 | student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Footer style lukt
+niet              | en dit             | en ik dit    | en dan ik dat    |
+| Position fixed
+doet het niet     | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+Divjes en classes verbeteren.
 
 
 

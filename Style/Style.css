@@ -2,12 +2,17 @@ body {
     font-family: 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap', sans-serif;
 }
 
-.menu {
+/* HIER BEGINT DE OPMAAK VAN DE HEADER */
+
+/* header menu img */
+header section:nth-of-type(1) img:nth-of-type(1) {
     height: 9vw;
     cursor: pointer;
 }
 
-.search {
+
+/*header search img  */
+header section:nth-of-type(1) img:nth-of-type(2) {
     position: absolute;
     height: 6vw;
     margin-left: 2vw;
@@ -15,7 +20,8 @@ body {
     cursor: pointer;
 }
 
-.bel {
+/* header bel img */
+header section:nth-of-type(1) img:nth-of-type(3) {
     position: absolute;
     height: 10vw;
     margin-left: 8vw;
@@ -23,7 +29,8 @@ body {
     cursor: pointer;
 }
 
-.logo {
+/* header logo img */
+header section:nth-of-type(1) a img {
     position: absolute;
     height: 8vw;
     width: 18vw;
@@ -32,36 +39,52 @@ body {
     cursor: pointer;
 }
 
-.profiel {
+/* header profiel img */
+header section:nth-of-type(1) div img:nth-of-type(1) {
     height: 7vw;
     margin: 1vw;
     cursor: pointer;
 }
 
-.heart {
+/* header heart img */
+header section:nth-of-type(1) div img:nth-of-type(2) {
+    right: 13vw;
+    height: 5.5vw;
+    margin: 1vw;
+    cursor: pointer;
+}
+
+header section:nth-of-type(1) div img:nth-of-type(2):hover {
+    right: 13vw;
+    height: 5.5vw;
+    margin: 1vw;
+    cursor: pointer;
+    fill: pink;
+}
+
+/* header bag img */
+header section:nth-of-type(1) div img:nth-of-type(3) {
+    right: 3vw;
     height: 7vw;
     margin: 1vw;
     cursor: pointer;
 }
 
-.bag {
-    height: 7vw;
-    margin: 1vw;
-    cursor: pointer;
-}
-
-.righttop {
+/* header div img flex */
+header section:nth-of-type(1) div {
     display: flex;
     flex-direction: row;
     margin-left: 65vw;
     margin-top: -9vw;
 }
 
-.black {
+/* header articel verzending */
+header articel {
     display: flex;
     background-color: black;
     margin: -2vw;
     margin-top: 1vw;
+    margin-left: -2.3vw;
     width: 100.2vw;
     height: 10vw;
     color: white;
@@ -69,30 +92,36 @@ body {
     font-size: 4vw;
 }
 
-.gratis {
+/* header articel span */
+.pink {
+    color: pink;
+    cursor: pointer;
+}
+
+/* header articel p */
+header articel p {
     margin-left: 22vw;
     margin-top: 3vw;
 }
 
-.pink {
-    color: lightpink;
-    cursor: pointer;
-}
-
+/* header articel span hover */
 .pink:hover {
     text-decoration: underline;
 }
 
 /* HIER STAAN DE TEKST OPMAAK VAN DE MAIN */
 
-.Image1 {
+/* HIER BEGINT DE OPMAAK VAN SECTION 1 */
+
+main section:nth-of-type(1) img:nth-of-type(1) {
     height: 100%;
     width: 100.2vw;
     margin: -2vw;
     margin-top: 2vw;
+    margin-left: -2.3vw;
 }
 
-.button1 {
+main section:nth-of-type(1) a {
     position: absolute;
     text-align: center;
     margin-left: 33vw;
@@ -104,32 +133,32 @@ body {
     cursor: pointer;
 }
 
-.button1:hover {
+main section:nth-of-type(1) a:hover {
     background-color: pink;
     transition: 1s;
 }
 
-/* OPMAAK SECTION 2 */
-
-h1 {
+/* /* HIER BEGINT DE OPMAAK VAN SECTION 2 */
+*/ h1 {
     font-weight: normal;
     font-size: 4vw;
     margin-top: 2vw;
 }
 
-.catogorieen {
+main #section2 ul {
     list-style-type: none;
 }
 
-.blokhorloge {
+main #section2 li {
     background-color: #F6F4F5;
     margin-top: -2vw;
-    margin-left: -11vw;
+    margin-left: -13.2vw;
     margin-right: -2vw;
+    margin-bottom: 4vw;
     padding: 3vw 27vw;
 }
 
-.horlogenieuw {
+main #section2 p {
     position: absolute;
     margin-left: -20vw;
     font-size: 4vw;
@@ -139,24 +168,16 @@ h1 {
     cursor: pointer;
 }
 
-.horlogenieuw:hover {
+main #section2 p:hover {
     color: pink;
     transition: 0.5s;
     cursor: pointer;
 }
 
-.horloge {
+main #section2 img {
     margin-left: 48vw;
     margin-top: -2vw;
     height: 20vw;
-}
-
-.blokoorbellen {
-    background-color: #F6F4F5;
-    margin-top: 1vw;
-    margin-left: -11vw;
-    margin-right: -2vw;
-    padding: 3vw 27vw;
 }
 
 .oorbellensieraden {
@@ -178,130 +199,11 @@ h1 {
     cursor: pointer;
 }
 
-.oorbellen {
-    margin-left: 48vw;
-    margin-top: -2vw;
-    height: 20vw;
-}
+/* HIER BEGINT DE OPMAAK VAN SECTION 3 */
 
-.blokjurk {
-    background-color: #F6F4F5;
-    margin-top: 1vw;
-    margin-left: -11vw;
-    margin-right: -2vw;
-    padding: 3vw 27vw;
-}
-
-.jurkkleding {
-    position: absolute;
-    margin-left: -20vw;
-    font-size: 4vw;
-    margin-top: 7vw;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.jurkkleding:hover {
-    color: pink;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.jurk {
-    margin-left: 48vw;
-    margin-top: -2vw;
-    height: 20vw;
-}
-
-.bloktas {
-    background-color: #F6F4F5;
-    margin-top: 1vw;
-    margin-left: -11vw;
-    margin-right: -2vw;
-    padding: 3vw 27vw;
-}
-
-.tasaccessoires {
-    position: absolute;
-    font-size: 4vw;
-    margin-left: -20vw;
-    margin-top: 7vw;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.tasaccessoires:hover {
-    color: pink;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.tas {
-    margin-left: 48vw;
-    margin-top: -2vw;
-    height: 20vw;
-}
-
-.blokketting {
-    background-color: #F6F4F5;
-    margin-top: 1vw;
-    margin-left: -11vw;
-    margin-right: -2vw;
-    padding: 3vw 27vw;
-}
-
-.kettingbestsellers {
-    position: absolute;
-    font-size: 4vw;
-    margin-left: -20vw;
-    margin-top: 7vw;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.kettingbestsellers:hover {
-    color: pink;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.ketting {
-    margin-left: 48vw;
-    margin-top: -2vw;
-    height: 20vw;
-}
-
-.blokinstagram {
-    background-color: #F6F4F5;
-    margin-top: 1vw;
-    margin-left: -11vw;
-    margin-right: -2vw;
-    padding: 1vw 27vw;
-}
-
-.instagramfoto {
-    font-size: 4vw;
-    position: absolute;
-    margin-left: -20vw;
-    margin-top: 8vw;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.instagramfoto:hover {
-    color: pink;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.girl {
-    margin-left: 48vw;
-    margin-top: 0vw;
-    height: 20vw;
+main #section3 #ulhome2 {
+    list-style-type: none;
+    margin-left: -10vw;
 }
 
 h2 {
@@ -312,7 +214,8 @@ h2 {
     justify-content: center;
 }
 
-.calander {
+/* calander img */
+main #section3 #lihome2:nth-of-type(1) img:nth-of-type(1) {
     display: block;
     height: 45vw;
     width: 31vw;
@@ -320,12 +223,14 @@ h2 {
     margin-top: 2vw;
 }
 
-.container {
+/* container 1  */
+main #section3 #lihome2:nth-of-type(1) {
     position: absolute;
     width: 50%;
 }
 
-.container:hover .calander2 {
+/* container hover */
+main #section3 #lihome2:nth-of-type(1):hover .calander2 {
     opacity: 1;
 }
 
@@ -338,14 +243,16 @@ h2 {
     opacity: 0;
 }
 
-.a2020 {
+/* title calander */
+main #section3 p:nth-of-type(1) {
     position: absolute;
     font-weight: 100;
     font-size: 3vw;
     margin-top: 48vw;
 }
 
-.gold {
+/* gold 1 */
+main section:nth-of-type(3) div:nth-of-type(1) {
     background-image: linear-gradient(to bottom left, goldenrod, gold);
     border-style: solid;
     border-width: 1.4px;
@@ -360,7 +267,8 @@ h2 {
     margin-top: 48.5vw;
 }
 
-.silver {
+/* silver 1 */
+main section:nth-of-type(3) div:nth-of-type(2) {
     background-image: linear-gradient(to top left, gray, gainsboro);
     border-style: solid;
     border-width: 1.4px;
@@ -375,7 +283,8 @@ h2 {
     margin-top: 48.5vw;
 }
 
-.giftcard {
+/* GIFTCARD IMG */
+main #section3 #lihome2:nth-of-type(2) img:nth-of-type(1) {
     position: absolute;
     height: 45vw;
     width: 31vw;
@@ -383,7 +292,8 @@ h2 {
     margin-top: 2vw;
 }
 
-.mjg {
+/* GIFTCARD TITLE */
+main #section3 #lihome2:nth-of-type(2) p:nth-of-type(1) {
     position: absolute;
     font-weight: 100;
     font-size: 3vw;
@@ -391,35 +301,44 @@ h2 {
     margin-left: 32vw;
 }
 
-.mjgprice {
-    position: relative;
-    margin-top: 1vw;
+/* PRIJS VAN GIFTCARD */
+main #section3 #lihome2:nth-of-type(2) p:nth-of-type(2) {
+    position: absolute;
+    margin-top: 321.5vw;
     margin-left: 32vw;
-    top: 53vw;
+    top: 60vw;
+    font-size: 3.5vw;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.al {
+/* PRIJS VAN SIRAAD 3 */
+main #section3 p:nth-of-type(2) {
     position: absolute;
     font-weight: 100;
     font-size: 3vw;
-    margin-top: 41vw;
+    margin-top: 48vw;
     margin-left: 65vw;
 }
 
-.sieraad1 {
+/* SIERAAD 3 */
+main #section3 #lihome2:nth-of-type(3) img:nth-of-type(1) {
     position: absolute;
     height: 45vw;
     width: 31vw;
     margin-left: 64vw;
-    margin-top: -5.7vw;
+    margin-top: 2vw;
 }
 
-.container1 {
+/* CONTAINER */
+main #section3 #lihome2:nth-of-type(3) {
     position: absolute;
     width: 50%;
 }
 
-.container1:hover .sieraad1b {
+
+/* CONTAINER HOVER */
+main #section3 #lihome2:nth-of-type(3):hover .sieraad1b {
     opacity: 1;
 }
 
@@ -428,17 +347,20 @@ h2 {
     height: 45vw;
     width: 31vw;
     margin-left: 64vw;
-    margin-top: -5.7vw;
+    margin-top: 2vw;
     opacity: 0;
 }
 
-.alprice {
+/* Prijs van al */
+main #section3 p:nth-of-type(3) {
     position: absolute;
+    font-size: 3.5vw;
     margin-left: 65vw;
-    margin-top: 46vw;
+    margin-top: 52.9vw;
 }
 
-.gold1 {
+/* gold 2 */
+main #section3 div:nth-of-type(3) {
     background-image: linear-gradient(to bottom left, goldenrod, gold);
     border-style: solid;
     border-width: 1.4px;
@@ -450,10 +372,11 @@ h2 {
     width: 2vw;
     height: 2vw;
     margin-left: 86vw;
-    margin-top: 41.5vw;
+    margin-top: 48.5vw;
 }
 
-.silver1 {
+/* silver 2 */
+main #section3 div:nth-of-type(4) {
     background-image: linear-gradient(to top left, gray, gainsboro);
     border-style: solid;
     border-width: 1.4px;
@@ -465,32 +388,47 @@ h2 {
     width: 2vw;
     height: 2vw;
     margin-left: 90vw;
-    margin-top: 41.5vw;
+    margin-top: 48.5vw;
 }
 
+/* HIER BEGINT DE OPMAAK VAN SECTION 4 */
 
-.black1 {
+/* black blok 1 */
+main section:nth-of-type(4) article:nth-of-type(1) {
+    position: relative;
     background-color: #302A2A;
     padding: 25vw 20vw;
-    margin-left: -2vw;
-    margin-top: 60vw;
-    width: 58vw;
+    margin-left: -2.3vw;
+    margin-top: 65vw;
+    width: 60vw;
+    height: 40vw;
     display: flex;
 }
 
-.black1a {
+/* black blok 1 img */
+main section:nth-of-type(4) article:nth-of-type(1) img {
+    position: relative;
+    height: 57vw;
+    margin-left: -16vw;
+    margin-top: -22vw;
+}
+
+/* black blok 1 a */
+main section:nth-of-type(4) article:nth-of-type(1) a {
     position: absolute;
     margin-top: 50vw;
     margin-left: 15vw;
     font-size: 3vw;
     font-weight: 600;
     background-color: white;
+    color: black;
     padding: 1vw 4vw;
     border-radius: 2px;
     cursor: pointer;
 }
 
-.black1p {
+/* black blok 1 p */
+main section:nth-of-type(4) article:nth-of-type(1) p {
     position: absolute;
     font-family: 'Dawning of a New Day', cursive;
     margin-top: 35vw;
@@ -499,35 +437,42 @@ h2 {
     color: white;
 }
 
-.personaljewellery {
+/* black blok 2  */
+main section:nth-of-type(4) article:nth-of-type(2) {
     position: relative;
-    height: 57vw;
-    margin-left: -18vw;
-    margin-top: -22vw;
-}
-
-.black2 {
     background-color: #302A2A;
     padding: 25vw 20vw;
-    margin-left: -2vw;
-    margin-top: 4vw;
-    width: 58vw;
+    margin-left: -2.3vw;
+    margin-top: 5vw;
+    width: 60vw;
+    height: 40vw;
     display: flex;
 }
 
-.black1a {
+/* black blok 2 img */
+main section:nth-of-type(4) article:nth-of-type(2) img {
+    position: relative;
+    height: 57vw;
+    margin-left: -16vw;
+    margin-top: -22vw;
+}
+
+/* black blok 2 a */
+main section:nth-of-type(4) article:nth-of-type(2) a {
     position: absolute;
     margin-top: 50vw;
     margin-left: 15vw;
     font-size: 3vw;
     font-weight: 600;
     background-color: white;
+    color: black;
     padding: 1vw 4vw;
     border-radius: 2px;
     cursor: pointer;
 }
 
-.black2p {
+/* black blok 2 p */
+main section:nth-of-type(4) article:nth-of-type(2) p {
     position: absolute;
     font-family: 'Dawning of a New Day', cursive;
     margin-top: 35vw;
@@ -536,29 +481,28 @@ h2 {
     color: white;
 }
 
-.giftfinder {
-    position: relative;
-    height: 57vw;
-    margin-left: -18vw;
-    margin-top: -22vw;
-}
+/* HIER BEGINT DE OPMAAK VAN SECTION 5 */
 
-.beige {
+/* beige blok */
+main section:nth-of-type(5) articel:nth-of-type(1) {
     position: absolute;
+    z-index: -1;
     font-size: 2vw;
     background-color: #F5F1E8;
     padding: 2vw 5vw;
-    margin-left: -2vw;
+    margin-left: -2.3vw;
     margin-top: 2vw;
-    width: 88vw;
+    width: 90vw;
     height: 25vw;
 }
 
-.beigemargin {
+/* beige p */
+main section:nth-of-type(5) articel:nth-of-type(1) p {
     margin-top: -1vw;
 }
 
-.beigeknop {
+/* beige a */
+main section:nth-of-type(5) articel:nth-of-type(1) a {
     position: absolute;
     margin-top: 2vw;
     font-size: 2vw;
@@ -570,16 +514,18 @@ h2 {
     cursor: pointer;
 }
 
-.fontbeige {
+/* fontbeige */
+main section:nth-of-type(5) div {
     background-color: white;
     border-radius: 250px;
     width: 30vw;
     height: 30vw;
     margin-left: 60vw;
-    margin-top: -17vw;
+    margin-top: 0vw;
 }
 
-.ring {
+/* fontbeige div */
+main section:nth-of-type(5) div div {
     position: absolute;
     border-style: solid;
     border-width: 0.7px;
@@ -592,7 +538,8 @@ h2 {
 
 /* BRON ROTATE: https://stackoverflow.com/questions/6028128/how-do-i-rotate-text-in-css */
 
-.ten {
+/* beige ten */
+main section:nth-of-type(5) div p:nth-of-type(1) {
     position: absolute;
     font-weight: 800;
     font-size: 10vw;
@@ -604,7 +551,8 @@ h2 {
     text-shadow: 2px 2px black;
 }
 
-.korting {
+/* beige korting  */
+main section:nth-of-type(5) div p:nth-of-type(2) {
     position: absolute;
     font-weight: 300;
     font-size: 5vw;
@@ -614,14 +562,18 @@ h2 {
     margin-top: 17vw;
 }
 
-.styledby {
+/* HIER BEGINT DE OPMAAK VAN SECTION 6 */
+
+/* section 6 h2 */
+main section:nth-of-type(6) h2 {
     position: relative;
     font-size: 5vw;
     margin-left: -40vw;
-    margin-top: 34vw;
+    margin-top: 12vw;
 }
 
-.joinc {
+/* section 6 p */
+main section:nth-of-type(6) p {
     position: relative;
     display: flex;
     justify-content: center;
@@ -629,74 +581,83 @@ h2 {
     margin-top: 3vw;
 }
 
-.styled1 {
+/* section 6 img1 */
+main section:nth-of-type(6) img:nth-of-type(1) {
     position: absolute;
     list-style-type: none;
     height: 50vw;
     margin-top: 0vw;
-    margin-left: -2vw;
+    margin-left: -2.3vw;
 }
 
-.styled2 {
+/* section 6 img2 */
+main section:nth-of-type(6) img:nth-of-type(2) {
     position: relative;
     list-style-type: none;
     height: 50vw;
     margin-top: 0vw;
-    margin-left: 39vw;
+    margin-left: 38.7vw;
 }
 
-.styled3 {
+/* section 6 img3 */
+main section:nth-of-type(6) img:nth-of-type(3) {
     position: relative;
     list-style-type: none;
     height: 50vw;
-    margin-top: -53vw;
-    top: -3.8vw;
-    margin-left: 80vw;
+    margin-top: -70vw;
+    top: -5vw;
+    margin-left: 79.7vw;
 }
 
+/* HIER BEGINT DE OPMAAK VAN SECTION 7  */
 
-.headersocialvolgers {
+/* socials h5 */
+main section:nth-of-type(7) h5 {
     position: relative;
     margin-top: -1vw;
     font-size: 3vw;
-    margin-left: 3vw;
+    margin-left: -2vw;
 }
 
-.socialvolgers {
+/* social p */
+main section:nth-of-type(7) p {
     position: relative;
-    margin-top: 10vw;
+    margin-top: 2vw;
+    margin-bottom: 8vw;
     font-size: 3vw;
     margin-left: 4vw;
     line-height: 1.6;
 }
 
-.blog {
+/* HIER BEGINT DE OPMAAK VAN SECTION 8 */
+
+/* blog article */
+main section:nth-of-type(8) articel {
     position: absolute;
     background-color: #F2E1D9;
-    margin-left: -2vw;
-    width: 95vw;
+    margin-left: -2.3vw;
+    width: 95.3vw;
     height: 30vw;
     padding: 2vw;
 }
 
-.headerblog {
+/* blog h3 */
+main section:nth-of-type(8) h3 {
     font-weight: 500;
     font-family: monospace;
     font-size: 4vw;
     margin-left: 2vw;
 }
 
-.blogtekst {
+/* blog p */
+main section:nth-of-type(8) articel p {
     font-size: 2.3vw;
     margin-left: 2vw;
     margin-top: -2vw;
 }
 
-.blogtekst2 {
-    margin-top: -2vw;
-}
-
-.blogknop {
+/* blog a */
+main section:nth-of-type(8) articel a {
     position: absolute;
     margin-left: 2vw;
     margin-top: 4vw;
@@ -708,59 +669,108 @@ h2 {
     cursor: pointer;
 }
 
-.sieraden6 {
+/* blog img */
+main section:nth-of-type(8) articel img {
     position: absolute;
     height: 34vw;
-    margin-left: 49vw;
+    margin-left: 49.3vw;
     margin-top: -20.5vw;
 }
 
-.ntmy {
+/* HIER BEGINT DE OPMAAK VAN SECTION 9 */
+
+/* section 9 h4 */
+main section:nth-of-type(9) {
     position: relative;
-    margin-top: 45vw;
+    margin-top: 49vw;
     font-size: 4.9vw;
     margin-left: -1.8vw;
 }
 
-.ntmy2 {
+/* section 9 h5 */
+main section:nth-of-type(9) h5 {
     position: relative;
-    margin-top: -5vw;
+    margin-top: -4vw;
     font-size: 4vw;
-    margin-left: -1.8vw;
     font-weight: 600;
 }
 
-.ntmy3 {
+/* section 9 p  */
+main section:nth-of-type(9) p {
     position: relative;
-    margin-top: -1vw;
+    margin-top: -2vw;
     font-size: 3vw;
-    margin-left: -1.8vw;
     line-height: 1.6;
 }
 
-.leesmeer {
+/* section 9 a  */
+main section:nth-of-type(9) a {
     position: relative;
     margin-top: -1vw;
     font-size: 3vw;
-    margin-left: 1vw;
     color: pink;
     cursor: pointer;
 }
 
-.footerul {
+footer ul {
     background-color: black;
     list-style-type: none;
     color: white;
-    margin-top: 12vw;
+    margin-top: 10vw;
     margin-left: -2vw;
+    margin-bottom: -2vw;
     width: 90vw;
+    height: 130vw;
 }
 
-.add {
+footer ul h5 {
     position: relative;
-    margin-left: 70vw;
-    margin-top: -4vw;
-    height: 10vw;
+    font-size: 3.5vw;
+    margin-top: -1vw;
+    top: -8vw;
+    margin-bottom: -11vw;
+    margin-left: -7vw;
+    padding: 5vw 0vw;
+    border-bottom: solid 0.3px grey;
+}
+
+footer ul img {
+    position: relative;
+    margin-left: 74vw;
+    margin-top: 3vw;
+    top: 2vw;
+    height: 8vw;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+footer p {
+    margin-left: 4vw;
+    margin-top: 1vw;
+}
+
+footer p:hover {
+    text-decoration: underline;
+}
+
+footer articel img {
+    margin-left: -3vw;
+    z-index: 2;
+    position: relative;
+    margin-top: -7vw;
+    top: 8vw;
+    height: 8vw;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+footer div img {
+    height: 2vw;
+    z-index: 1;
+    margin-left: 40vw;
+    margin-top: 10vw;
 }
 
 /* HIER BEGINT DE OPMAAK VAN DE DETAIL PAGINA */
@@ -773,122 +783,68 @@ h2 {
     width: 100vw;
 }
 
-.producten {
+/* PRODUCTEN AANTAL */
+#headerdetail h3 {
     color: grey;
     font-size: 2.9vw;
+    font-weight: 100;
     display: flex;
     justify-content: flex-end;
     margin-top: 4vw;
 }
 
-.arrow {
+/* PIJL NAAR LINKS */
+#headerdetail div {
     font-size: 8vw;
     font-family: monospace;
     margin-top: -5vw;
     cursor: pointer;
 }
 
-.arrow:hover {
+/* PIJL NAAR LINKS HOVER */
+#headerdetail div:hover {
     color: pink;
     transition: 0.5s;
     cursor: pointer;
 }
 
-.homegrey {
+/* HOME */
+main #headerdetail:nth-of-type(1) p {
     color: grey;
     font-size: 2.9vw;
-    margin-top: -18vw;
+    margin-top: -10.5vw;
     margin-left: 8vw;
 }
 
-.sieradengrey {
+/* SIERADEN */
+#headerdetail h2 {
     font-size: 5vw;
     margin-top: -1vw;
-    margin-left: 8vw;
+    margin-left: -60vw;
     font-family: serif;
 }
 
-.row1 {
-    position: absolute;
+#filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#filter p {
     border-style: solid;
     border-color: lightgray;
     border-width: 0.25vw;
     border-radius: 4px;
     padding: 2.8vw 2.5vw;
     margin-top: 0vw;
-    margin-left: -1vw;
+    margin-left: 2vw;
     width: 17vw;
     font-weight: 800;
     font-size: 3vw;
     cursor: pointer;
 }
 
-.row1:hover {
-    color: pink;
-    transition: 0.5s;
-}
-
-.row2 {
-    position: absolute;
-    border-style: solid;
-    border-color: lightgray;
-    border-width: 0.25vw;
-    border-radius: 4px;
-    padding: 2.8vw 2.5vw;
-    margin-top: 0vw;
-    margin-left: 23vw;
-    width: 16vw;
-    font-weight: 800;
-    font-size: 3vw;
-    cursor: pointer;
-}
-
-.row2:hover {
-    color: pink;
-    transition: 0.5s;
-}
-
-.row3 {
-    position: absolute;
-    border-style: solid;
-    border-color: lightgray;
-    border-width: 0.25vw;
-    border-radius: 4px;
-    padding: 2.8vw 2.5vw;
-    margin-top: -0vw;
-    margin-left: 46vw;
-    width: 19vw;
-    font-weight: 800;
-    font-size: 3vw;
-    cursor: pointer;
-}
-
-.row3:hover {
-    color: pink;
-    transition: 0.5s;
-}
-
-.row4 {
-    position: absolute;
-    border-style: solid;
-    border-color: lightgray;
-    border-width: 0.25vw;
-    border-radius: 4px;
-    padding: 2.8vw 2.5vw;
-    margin-top: -0vw;
-    margin-left: 72vw;
-    width: 12vw;
-    font-weight: 800;
-    font-size: 3vw;
-    cursor: pointer;
-}
-
-.row4:hover {
-    color: pink;
-    transition: 0.5s;
-}
-
-.arrow2 {
+#filter div {
     position: absolute;
     font-size: 8vw;
     font-family: monospace;
@@ -902,52 +858,663 @@ h2 {
     cursor: pointer;
 }
 
-.arrow2:hover {
+#filter div:hover {
     color: pink;
     transition: 0.5s;
     cursor: pointer;
 }
 
-.row5 {
+#row5 {
     position: absolute;
     border-style: solid;
     border-color: lightgray;
     border-width: 0.25vw;
     border-radius: 4px;
     height: 10vw;
-    margin-top: 12vw;
+    margin-top: 1vw;
     margin-left: -1vw;
     width: 95vw;
     font-size: 4vw;
     cursor: pointer;
 }
 
-.row5p:hover {
+#row5 h4:hover {
     color: pink;
     transition: 0.5s;
 }
 
-.filter {
+#row5 img {
     position: absolute;
     height: 8vw;
-    margin-left: 50vw;
-    margin-top: -10vw;
+    width: 8vw;
+    margin-left: 61vw;
+    margin-top: -11vw;
 }
 
-.row5p {
-    margin-left: 36vw;
+#row5 h4 {
+    margin-left: 29vw;
     margin-top: 3vw;
+    font-weight: 100;
+    font-size: 3.8vw;
 }
 
-.row6 {
+/* SECTION 2 */
+/* WIJ DENKEN DAT JE DEZE ITEMS LEUK VINDT */
+main #section2d {
+    margin-left: -2.3vw;
     position: absolute;
+    margin-top: 17vw;
+    background-color: #E9B9C4;
+    padding: 2vw 2vw;
+    width: 100vw;
+    height: 94vw;
+}
+
+/* SECTION 2 H3 */
+main #section2d h3 {
+    margin-top: 1vw;
+    color: white;
+    text-align: center;
+    font-size: 4.5vw;
+
+}
+
+/* SECTION 2 UL */
+main #section2d ul {
+    list-style-type: none;
+}
+
+/* SECTION 2 TEKST BOLLETJE */
+main #section2d p:nth-of-type(1) {
+    position: absolute;
+    z-index: 2;
+    margin-top: 75vw;
+    font-size: 2.7vw;
+}
+
+/* SECTION 2 PRIJS BOLLETJE */
+main #section2d p:nth-of-type(2) {
+    position: absolute;
+    z-index: 2;
+    margin-top: 80vw;
+    font-size: 3vw;
+    font-weight: 800;
+}
+
+/* SECTION 2 TEKST VLINDER */
+main #section2d p:nth-of-type(3) {
+    position: absolute;
+    z-index: 2;
+    margin-top: 75vw;
+    font-size: 2.7vw;
+    margin-left: 49.3vw;
+}
+
+/* SECTION 2 PRIJS VLINDER */
+main #section2d #articled1 p:nth-of-type(4) {
+    position: absolute;
+    z-index: 2;
+    margin-top: 79.5vw;
+    font-size: 3vw;
+    font-weight: 800;
+    margin-left: 49.3vw;
+}
+
+/* SECTION 2 PIJL RECHTS */
+main #section2d #articled1 div:nth-of-type(1) {
+    position: absolute;
+    z-index: 2;
+    font-family: monospace;
+    background-color: white;
+    padding: 3vw 2.5vw;
+    border-radius: 5px;
+    margin-top: 32vw;
+    margin-left: 90.9vw;
+}
+
+/* SECTION 2 PIJL LINKS */
+main #section2d #articled1 div:nth-of-type(2) {
+    position: absolute;
+    z-index: 2;
+    font-family: monospace;
+    background-color: white;
+    padding: 3vw 2.5vw;
+    border-radius: 5px;
+    margin-top: 32vw;
+    margin-left: -1.8vw;
+}
+
+/* AFBEELDING BOLLETJE */
+main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(1) img:nth-of-type(1) {
+    position: absolute;
+    height: 74vw;
+    margin-left: -11.5vw;
+    margin-top: -1vw;
+}
+
+/* CONTAINER */
+main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(1) {
+    position: absolute;
+    width: 50%;
+}
+
+
+/* CONTAINER HOVER */
+main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(1):hover .bolletje2 {
+    opacity: 1;
+}
+
+.bolletje2 {
+    position: absolute;
+    height: 74vw;
+    margin-left: -11.5vw;
+    margin-top: -1vw;
+    opacity: 0;
+}
+
+/* AFBEELDING VLINDER */
+main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(2) img:nth-of-type(1) {
+    position: absolute;
+    height: 74vw;
+    margin-left: 37.5vw;
+    margin-top: -1vw;
+}
+
+/* CONTAINER */
+main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(2) {
+    position: absolute;
+    width: 50%;
+}
+
+
+/* CONTAINER HOVER */
+main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(2):hover .vlinder2 {
+    opacity: 1;
+}
+
+.vlinder2 {
+    position: absolute;
+    height: 74vw;
+    margin-left: 37.5vw;
+    margin-top: -1vw;
+    opacity: 0;
+}
+
+/* HIER BEGINT DE CSS VAN DE REST VAN DE PRODUCTEN */
+/* SIERAAD1 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) img:nth-of-type(1) {
+    position: absolute;
+    height: 71vw;
+    margin-left: -11vw;
+    margin-top: 88vw;
+}
+
+/* CONTAINER */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) {
+    position: absolute;
+    width: 50%;
+}
+
+
+/* CONTAINER HOVER */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1):hover .detailsieraad1b {
+    opacity: 1;
+}
+
+.detailsieraad1b {
+    position: absolute;
+    height: 71vw;
+    width: 47vw;
+    margin-left: -11vw;
+    margin-top: 88vw;
+    opacity: 0;
+}
+
+
+/* TITEL SIERAAD1 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) h5 {
+    position: absolute;
+    font-size: 2.7vw;
+    font-weight: 100;
+    margin-left: -10.3vw;
+    margin-top: 162vw;
+}
+
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) h5:hover {
+    text-decoration: underline;
+}
+
+/* PRIJS SIERAAD1 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) p {
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-left: -10.3vw;
+    margin-top: 166.5vw;
+}
+
+/* GOLD SIERAAD1 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) #goldd1 {
+    background-image: linear-gradient(to bottom left, goldenrod, gold);
+    border-style: solid;
+    border-width: 1.4px;
+    border-color: goldenrod;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 250px;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 29.3vw;
+    margin-top: 162vw;
+
+}
+
+/* ZILVER SIERAAD1 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) #zilverd1 {
+    background-image: linear-gradient(to top left, gray, gainsboro);
+    border-style: solid;
+    border-width: 1.4px;
+    border-color: gray;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 250px;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 33.3vw;
+    margin-top: 162vw;
+}
+
+/* SIERAAD 2 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) img:nth-of-type(1) {
+    position: absolute;
+    height: 71vw;
+    margin-left: 39.5vw;
+    margin-top: 88vw;
+}
+
+/* CONTAINER */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) {
+    position: absolute;
+    width: 50%;
+}
+
+
+/* CONTAINER HOVER */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2):hover .detailsieraad2b {
+    opacity: 1;
+}
+
+.detailsieraad2b {
+    position: absolute;
+    height: 71vw;
+    margin-left: 39.5vw;
+    margin-top: 88vw;
+    opacity: 0;
+}
+
+/* TITEL SIERAAD2 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) h5 {
+    position: absolute;
+    font-size: 2.7vw;
+    font-weight: 100;
+    margin-left: 41vw;
+    margin-top: 162vw;
+    width: 100vw;
+}
+
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) h5:hover {
+    text-decoration: underline;
+}
+
+/* PRIJS SIERAAD2 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) p {
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-left: 41vw;
+    margin-top: 166.5vw;
+    width: 100vw;
+}
+
+/* GOLD SIERAAD2 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) #goldd2 {
+    background-image: linear-gradient(to bottom left, goldenrod, gold);
+    border-style: solid;
+    border-width: 1.4px;
+    border-color: goldenrod;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 250px;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 78vw;
+    margin-top: 162vw;
+
+}
+
+/* ZILVER SIERAAD2 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) #zilverd2 {
+    background-image: linear-gradient(to top left, gray, gainsboro);
+    border-style: solid;
+    border-width: 1.4px;
+    border-color: gray;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 250px;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 82vw;
+    margin-top: 162vw;
+}
+
+/* COLORWHEEL SIERAAD2 */
+.colorwheel1 {
+    position: absolute;
+    height: 4.7vw;
+    margin-left: 78.5vw;
+    margin-top: 165.5vw;
+}
+
+/* SIERAAD 3 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) img:nth-of-type(1) {
+    position: absolute;
+    height: 71vw;
+    margin-left: -11vw;
+    margin-top: 175vw;
+}
+
+/* CONTAINER */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) {
+    position: absolute;
+    width: 50%;
+}
+
+
+/* CONTAINER HOVER */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3):hover .detailsieraad3b {
+    opacity: 1;
+}
+
+.detailsieraad3b {
+    position: absolute;
+    height: 71vw;
+    margin-left: -11vw;
+    margin-top: 175vw;
+    opacity: 0;
+}
+
+/* TITEL SIERAAD3 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) h5 {
+    position: absolute;
+    font-size: 2.7vw;
+    font-weight: 100;
+    margin-left: -10.3vw;
+    margin-top: 249vw;
+}
+
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) h5:hover {
+    text-decoration: underline;
+}
+
+/* PRIJS SIERAAD3 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) p {
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-left: -10.3vw;
+    margin-top: 253.5vw;
+}
+
+/* GOLD SIERAAD3 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) #goldd3 {
+    background-image: linear-gradient(to bottom left, goldenrod, gold);
+    border-style: solid;
+    border-width: 1.4px;
+    border-color: goldenrod;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 250px;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 29.3vw;
+    margin-top: 249vw;
+
+}
+
+/* ZILVER SIERAAD3 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) #zilverd3 {
+    background-image: linear-gradient(to top left, gray, gainsboro);
+    border-style: solid;
+    border-width: 1.4px;
+    border-color: gray;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 250px;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 33.3vw;
+    margin-top: 249vw;
+}
+
+/* COLORWHEEL SIERAAD3 */
+.colorwheel2 {
+    position: absolute;
+    height: 4.7vw;
+    margin-left: 29.7vw;
+    margin-top: 252.5vw;
+}
+
+/* SIERAAD4 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) img {
+    position: absolute;
+    height: 71vw;
+    margin-left: 39.5vw;
+    margin-top: 175vw;
+}
+
+
+/* CONTAINER */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) {
+    position: absolute;
+    width: 50%;
+}
+
+
+/* CONTAINER HOVER */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4):hover .detailsieraad4b {
+    opacity: 1;
+}
+
+.detailsieraad4b {
+    position: absolute;
+    height: 71vw;
+    margin-left: 39.5vw;
+    margin-top: 175vw;
+    opacity: 0;
+}
+
+/* TITEL SIERAAD4 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) h5 {
+    position: absolute;
+    font-size: 2.7vw;
+    font-weight: 100;
+    margin-left: 41vw;
+    margin-top: 249vw;
+    width: 100vw;
+}
+
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) h5:hover {
+    text-decoration: underline;
+}
+
+/* PRIJS SIERAAD4 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) p {
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-left: 41vw;
+    margin-top: 253.5vw;
+    width: 100vw;
+}
+
+/* GOLD SIERAAD4 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) #goldd4 {
+    background-image: linear-gradient(to bottom left, goldenrod, gold);
+    border-style: solid;
+    border-width: 1.4px;
+    border-color: goldenrod;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 250px;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 78vw;
+    margin-top: 249vw;
+
+}
+
+/* ZILVER SIERAAD4 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) #zilverd4 {
+    background-image: linear-gradient(to top left, gray, gainsboro);
+    border-style: solid;
+    border-width: 1.4px;
+    border-color: gray;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 250px;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 82vw;
+    margin-top: 249vw;
+}
+
+/* KOPJE SIERAAD */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(5) img {
+    position: absolute;
+    height: 71vw;
+    margin-left: -11vw;
+    margin-top: 262vw;
+}
+
+/* KNOP KOPJE SIERAAD */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(5) a {
+    position: absolute;
+    z-index: 3;
+    color: white;
+    background-color: dimgray;
+    font-size: 2vw;
+    padding: 0.5vw 1.5vw;
+    border-style: solid;
+    border-width: 0.7px;
+    border-color: white;
+    border-radius: 5px;
+    margin-top: 327vw;
+    margin-left: 6vw;
+}
+
+
+/* SIERAAD 5 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) img {
+    position: absolute;
+    height: 71vw;
+    margin-left: 39.4vw;
+    margin-top: 262vw;
+}
+
+/* CONTAINER */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) {
+    position: absolute;
+    width: 50%;
+}
+
+
+/* CONTAINER HOVER */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6):hover .detailsieraad5b {
+    opacity: 1;
+}
+
+.detailsieraad5b {
+    position: absolute;
+    height: 71vw;
+    margin-left: 39.4vw;
+    margin-top: 262vw;
+    opacity: 0;
+}
+
+/* TITEL SIERAAD5 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) h5 {
+    position: absolute;
+    font-size: 2.7vw;
+    font-weight: 100;
+    margin-left: 41vw;
+    margin-top: 335.5vw;
+    width: 100vw;
+}
+
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) h5:hover {
+    text-decoration: underline;
+}
+
+/* PRIJS SIERAAD5 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) p {
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-left: 41vw;
+    margin-top: 340.5vw;
+    width: 100vw;
+}
+
+/* GOLD SIERAAD5 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #goldd5 {
+    background-image: linear-gradient(to bottom left, goldenrod, gold);
+    border-style: solid;
+    border-width: 1.4px;
+    border-color: goldenrod;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 250px;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 78vw;
+    margin-top: 335.5vw;
+
+}
+
+/* ZILVER SIERAAD5 */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #zilverd5 {
+    background-image: linear-gradient(to top left, gray, gainsboro);
+    border-style: solid;
+    border-width: 1.4px;
+    border-color: gray;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 250px;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 82vw;
+    margin-top: 335.5vw;
+}
+
+#row6 {
+    position: relative;
     border-style: solid;
     border-color: black;
     border-width: 0.25vw;
     border-radius: 4px;
     padding: 2.5vw 2.5vw;
     height: 8vw;
-    margin-top: 400vw;
+    margin-top: 382vw;
     margin-left: 1vw;
     width: 85vw;
     font-weight: 800;
@@ -955,26 +1522,26 @@ h2 {
     cursor: pointer;
 }
 
-.row6:hover {
+#row6:hover {
     border-color: pink;
     color: pink;
     transition: 0.5s;
 }
 
-.row6p {
+#row6 h4 {
     margin-left: 23vw;
     margin-top: 2vw;
 }
 
-.reload {
+#row6 img {
     position: absolute;
     height: 10vw;
     margin-left: 11vw;
-    margin-top: -10vw;
+    margin-top: -12vw;
 }
 
 .blackline {
-    position: absolute;
+    position: relative;
     background-color: black;
     height: 0.2vw;
     margin-top: 2vw;
@@ -982,31 +1549,24 @@ h2 {
     width: 100vw;
 }
 
-.footerul2 {
-    background-color: black;
-    list-style-type: none;
-    color: white;
-    margin-top: -10vw;
-    margin-left: -2vw;
-    width: 90vw;
-}
-
-.vgb {
-    position: absolute;
-    /*  height: 0.2vw; */
-    margin-top: 419vw;
+#voortgang img {
+    position: relative;
+    margin-top: 4vw;
     margin-left: 1vw;
     width: 90vw;
+    height: 8vw;
 }
 
-.vandeproducten {
+#voortgang h3 {
     display: flex;
     justify-content: center;
-    margin-top: 431vw;
+    margin-top: 1vw;
     font-size: 3vw;
+    font-weight: 100;
 }
 
-.filterrow1 {
+#filterrow1 {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -1015,21 +1575,20 @@ h2 {
     cursor: pointer;
     margin-left: -12vw;
     margin-top: 15vw;
-
 }
 
-.filterrow1b {
+#filterrow1 p {
     border-style: solid;
     border-color: black;
     border-width: 0.25vw;
     padding: 2.8vw 3vw;
     font-size: 2.8vw;
     margin-left: 2.5vw;
-    margin-top: 2.5vw;
+    margin-top: 1vw;
     display: flex;
 }
 
-.filterrow2 {
+#filterrow2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -1037,51 +1596,70 @@ h2 {
     list-style-type: none;
     cursor: pointer;
     margin-left: -4vw;
-    margin-top: 8vw;
+    margin-top: 7vw;
 }
 
-.filterrow1c {
+#filterrow2 p {
     border-style: solid;
     border-color: black;
     border-width: 0.25vw;
     padding: 2.8vw 3vw;
     font-size: 2.8vw;
     margin-left: 2.5vw;
-    margin-top: 2.5vw;
+    margin-top: 1vw;
     display: flex;
 }
 
-.greydetail {
+#tekstd {
     background-color: #F6F5F5;
-    margin-left: -2vw;
-    margin-top: 15vw;
-    height: 90vw;
-    width: 98vw;
+    margin-left: -2.3vw;
+    margin-top: 8vw;
+    height: 92vw;
+    width: 100vw;
 }
 
-.h4detail {
+#tekstd h4 {
     position: relative;
+    z-index: 5;
     margin-left: 2vw;
     top: 5vw;
     font-size: 4vw;
     font-weight: 800;
 }
 
-.Sieradentrend {
+#tekstdp {
     position: relative;
     margin-left: 2vw;
     top: 2vw;
+    font-family: 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap', sans-serif;
+    color: black;
     margin-right: 1.9vw;
-    font-size: 3vw;
+    font-size: 2.5vw;
     line-height: 1.6;
+    letter-spacing: 0.2vw;
+    width: 93vw;
 }
 
-.trendleesmeer {
+#tekstd .leesm {
     position: relative;
     margin-left: 2vw;
-    top: 2vw;
+    top: 5vw;
     font-size: 3vw;
+    font-weight: 10;
     line-height: 1.6;
+    font-size: 2.7vw;
     color: pink;
     cursor: pointer;
+    background-color: transparent;
+
+}
+
+#tekstd span {
+    color: pink;
+    cursor: pointer;
+}
+
+#footerd {
+    margin-top: -22.3vw;
+    margin-left: -0.3vw;
 }

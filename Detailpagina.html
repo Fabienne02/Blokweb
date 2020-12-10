@@ -20,185 +20,267 @@
     <!-- DEZE REGEL IS VOOR DE FAVICON -->
 </head>
 
-<body>
-    <!-- HTML HEADER BEGINT HIER -->
-    <header>
-        <container>
-            <img src="images/Menu.png" alt="Menu" class="menu">
-            <img src="images/Search.png" alt="Search Logo" class="search">
-            <img src="Images/bel.png" alt="notificaties Logo" class="bel">
-            <a href="One%20homepage.html"><img src="Images/bel.png" alt="notificaties Logo" class="bel">
-                <img src="images/Logo.png" alt="Logo" class="logo"></a>
-            <div class="righttop">
-                <img src="images/Profiel.png" alt="Profiel Logo" class="profiel">
-                <img src="images/Heart.png" alt="Heart Logo" class="heart">
-                <img src="images/Bag.png" alt="Bag Logo" class="bag">
-            </div>
-        </container>
-        <div class="greyline"></div>
-    </header>
-
-    <body>
-        <p class="producten">1088 producten</p>
-        <p class="arrow">&lt;</p>
-        <p class="homegrey">Home /</p>
-        <p class="sieradengrey">Sieraden</p>
-        <div class="row1"><b>Oorbellen</b></div>
-        <div class="row2"><b>Kettingen</b></div>
-        <div class="row3"><b>Armbanden</b></div>
-        <div class="row4"><b>Ringen</b></div>
-        <p class="arrow2">&gt;</p>
-        <div class="row5">
-            <p class="row5p">Filteren</p>
-            <img src="Images/Filter.png" alt="filter symbol" class="filter">
+<!-- HTML HEADER BEGINT HIER -->
+<header>
+    <section>
+        <img src="images/Menu.png" alt="Menu">
+        <img src="images/Search.png" alt="Search Logo">
+        <img src="Images/bel.png" alt="notificaties Logo">
+        <a href="One%20homepage.html">
+            <img src="images/Logo.png" alt="Logo" class="logo"></a>
+        <div>
+            <img src="images/Profiel.png" alt="Profiel Logo" class="profiel">
+            <img src="images/heart.svg" alt="Heart Logo">
+            <img src="images/Bag.png" alt="Bag Logo">
         </div>
+    </section>
+    <div class="greyline"></div>
+</header>
 
-        <!-- HIER KOMEN ALLE PLAATJES IN GRID -->
 
-        <div class="row6">
-            <p class="row6p">Meer producten weergeven</p>
-            <img src="Images/Reload.png" alt="reload logo" class="reload">
-        </div>
-        <img src="Images/voortgangbalkje.png" alt="Voortgangs balk" class="vgb">
-        <p class="vandeproducten">28/1088 producten</p>
-        <ul class="filterrow1">
+<main id="detail">
+    <section>
+        <article id="headerdetail">
+            <h3>1088 producten</h3>
+            <div>&lt;</div>
+            <p>Home /</p>
+            <h2>Sieraden</h2>
+        </article>
+
+        <article id="filter">
+            <p><b>Oorbellen</b></p>
+            <p><b>Kettingen</b></p>
+            <p><b>Armbanden</b></p>
+            <p><b>Ringen</b></p>
+            <div>&gt;</div>
+        </article>
+
+        <article id="row5">
+            <h4>Filteren &amp; Sorteren </h4>
+            <img src="Images/Filter.png" alt="filter symbol">
+        </article>
+    </section>
+
+    <!-- HIER KOMEN ALLE PLAATJES IN GRID -->
+    <section id="section2d">
+        <article id="articled1">
+            <h3>We denken dat je deze items leuk vindt, :</h3>
+            <ul id="uldetail1">
+                <li id="lidetail1">
+                    <img src="Images/bolletje1.png" alt="Ketting met bolletjes">
+                    <img src="Images/bolletje2.jpg" alt="Ketting met bolletjes 2" class="bolletje2">
+                </li>
+                <li id="lidetail1">
+                    <img src="Images/vlinder1.png" alt="Ketting met vlinders">
+                    <img src="Images/vlinder2.jpg" alt="Ketting met vlinders 2" class="vlinder2">
+                </li>
+            </ul>
+            <p>Ketting grote bolletjes</p>
+            <p><b>€ 19.95</b></p>
+            <p>Ketting vlindertjes</p>
+            <p><b>€ 19.95</b></p>
+            <div> &gt;</div>
+            <div> &lt;</div>
+        </article>
+        <article id="articled2">
+            <ul id="uldetail2">
+                <li id="lidetail2">
+                    <img src="Images/detailsieraad1.png" alt="Goude ketting, letter M">
+                    <img src="Images/Detailsieraad1b.jpg" alt="Goude ketting, letter M" class="detailsieraad1b">
+                    <h5>Ketting chunky initials</h5>
+                    <p><b>€ 27,95</b></p>
+                    <div id="goldd1"></div>
+                    <div id="zilverd1"></div>
+                </li>
+             <li id="lidetail2">
+                 <img src="Images/detailsieraad2.png" alt="Zilvere ring, hart steen">
+                 <img src="Images/Detailsieraad2b.png" alt="Zilvere ring, hart steen"
+                 class="detailsieraad2b">
+                 <h5>Ring - Sprakle Edition</h5>
+                 <p><b>€ 29,95</b></p>
+                 <div id="goldd2"></div>
+                 <div id="zilverd2"></div>
+                 <img src="Images/colorwheel.png" alt="colorwheel" class="colorwheel1">
+             </li>
+             <li id="lidetail2">
+                 <img src="Images/detailsieraad3.png" alt="Zilvere Armband, geboorte symbool">
+                    <img src="Images/Detailsieraad3b.png" alt="Zilvere Armband, geboorte symbool" class="detailsieraad3b">
+                 <h5>Geboortemaand armband de...</h5>
+                 <p><b>€ 17,95</b></p>
+                 <div id="goldd3"></div>
+                 <div id="zilverd3"></div>
+                 <img src="Images/colorwheel.png" alt="colorwheel" class="colorwheel2">
+             </li>
+             <li id="lidetail2">
+                 <img src="Images/detailsieraad4.png" alt="Zilvere ketting, sterren sluiting">
+                 <img src="Images/Detailsieraad4b.png" alt="Zilvere ketting, sterren sluiting"
+                 class="detailsieraad4b">
+                 <h5>Ketting ster sluiting</h5>
+                 <p><b>€ 19,95</b></p>
+                 <div id="goldd4"></div>
+                 <div id="zilverd4"></div>
+             </li>
+             <li id="lidetail2">
+                 <img src="Images/detailsieraadkopje.png" alt="Giftfinder kopje">
+                 <a>Doe de test</a>
+             </li>
+             <li id="lidetail2">
+                 <img src="Images/detailsieraad5.png" alt="Goude armband, Letter M">
+                  <img src="Images/Detailsieraad5b.jpg" alt="Zilvere ketting, sterren sluiting"
+                 class="detailsieraad5b">
+                 <h5>Armband chunky initials </h5>
+                 <p><b>€ 19,95</b></p>
+                 <div id="goldd5"></div>
+                 <div id="zilverd5"></div>
+             </li> 
+            </ul>
+        </article>
+    </section>
+    <section>
+        <article id="row6">
+            <h4>Meer producten weergeven</h4>
+            <img src="Images/Reload.png" alt="reload logo">
+        </article>
+        <article id="voortgang">
+            <img src="Images/voortgangbalkje.png" alt="Voortgangs balk">
+            <h3>28/1088 producten</h3>
+        </article>
+    </section>
+    <section>
+        <ul id="filterrow1">
             <li>
-                <div class="filterrow1b">Oorbellen</div>
+                <p>Oorbellen</p>
             </li>
             <li>
-                <div class="filterrow1b">Kettingen</div>
-            </li>
-             <li>
-                <div class="filterrow1b">Armbanden</div>
-            </li>
-             <li>
-                <div class="filterrow1b">Ringen</div>
-            </li>
-             <li>
-                <div class="filterrow1b">Bedels</div>
-            </li>
-             <li>
-                <div class="filterrow1b">Horloges</div>
+                <p>Kettingen</p>
             </li>
             <li>
-                <div class="filterrow1b">DIY sieraden</div>
+                <p>Armbanden</p>
             </li>
             <li>
-                <div class="filterrow1b">Initiale sieraden</div>
+                <p>Ringen</p>
             </li>
             <li>
-                <div class="filterrow1b">Sterrenbeeld sieraden</div>
+                <p>Bedels</p>
             </li>
             <li>
-                <div class="filterrow1b">925 Sterling silver</div>
+                <p>Horloges</p>
             </li>
             <li>
-                <div class="filterrow1b">Enkelbandjes</div>
+                <p>DIY sieraden</p>
             </li>
             <li>
-                <div class="filterrow1b">Hartjes sieraden</div>
+                <p>Initiale sieraden</p>
             </li>
             <li>
-                <div class="filterrow1b">Sterren sieraden</div>
+                <p>Sterrenbeeld sieraden</p>
+            </li>
+            <li>
+                <p>925 Sterling silver</p>
+            </li>
+            <li>
+                <p>Enkelbandjes</p>
+            </li>
+            <li>
+                <p>Hartjes sieraden</p>
+            </li>
+            <li>
+                <p>Sterren sieraden</p>
             </li>
         </ul>
         <div class="blackline"></div>
-        <lu class="filterrow2">
+        <lu id="filterrow2">
             <li>
-                <div class="filterrow1c">Nieuw</div>
+                <p>Nieuw</p>
             </li>
             <li>
-                <div class="filterrow1c">Bestsellers</div>
+                <p>Bestsellers</p>
             </li>
             <li>
-                <div class="filterrow1c">Cadeaus</div>
+                <p>Cadeaus</p>
             </li>
             <li>
-                <div class="filterrow1c">Party Collection</div>
+                <p>Party Collection</p>
             </li>
             <li>
-                <div class="filterrow1c">Sieraden</div>
+                <p>Sieraden</p>
             </li>
             <li>
-                <div class="filterrow1c">Kleding</div>
+                <p>Kleding</p>
             </li>
             <li>
-                <div class="filterrow1c">Accessoires</div>
+                <p>Accessoires</p>
             </li>
             <li>
-                <div class="filterrow1c">Sale</div>
+                <p>Sale</p>
             </li>
             <li>
-                <div class="filterrow1c">Shop Instagram</div>
+                <p>Shop Instagram</p>
             </li>
             <li>
-                <div class="filterrow1c">Collecties</div>
+                <p>Collecties</p>
             </li>
             <li>
-                <div class="filterrow1c">Deals</div>
+                <p>Deals</p>
             </li>
         </lu>
-        <article class="greydetail">
-            <h4 class="h4detail">Sieraden volgens de laatste trends</h4>
-            <p class="Sieradentrend">
-                My Jewellery heeft een uitgebreide collectie aan sieraden en daarom zit er altijd wat voor je bij. Trendy sieraden kunnen natuurlijk niet ontbreken in jouw sieradenstash. Maar naast dit 'fashion' assortiment, is er ook een groot aanbod aan tijdloze sieraden, die je overal bij kunt combineren. Ga je voor zilveren- of gouden sieraden of hou je toch meer van sieraden met kralen, steentjes, kleuren of quotes? Misschien hecht jij wel meer waarde aan vriendschapsieraden of sieraden met een speciale betekenis. Er is voor ieder wat wils en gepersonaliseerd op jouw unieke stijl. Het hele jaar komen er nieuwe sieraden die helemaal on-trend zijn volgens het laatste seizoen zodat jij er altijd fashionable uit ziet. Hoe dan ook, we’ve got it all. Zo shop je de mooiste <span class="pink">oorbellen</span>, <span class="pink">kettingen</span>, <span class="pink">armbanden</span>, <span class="pink">ringen</span>, <span class="pink">enkelbandjes</span>, <span class="pink">horloges</span> &amp; <span class="pink">bedels</span> in onze webshop of in één van onze boutiques
+    </section>
+    <section>
+        <article id="tekstd">
+            <h4>Sieraden volgens de laatste trends</h4>
+            <p id="tekstdp">
+                My Jewellery heeft een uitgebreide collectie aan sieraden en daarom zit er altijd wat voor je bij. Trendy sieraden kunnen natuurlijk niet ontbreken in jouw sieradenstash. Maar naast dit 'fashion' assortiment, is er ook een groot aanbod aan tijdloze sieraden, die je overal bij kunt combineren. Ga je voor zilveren- of gouden sieraden of hou je toch meer van sieraden met kralen, steentjes, kleuren of quotes? Misschien hecht jij wel meer waarde aan vriendschapsieraden of sieraden met een speciale betekenis. Er is voor ieder wat wils en gepersonaliseerd op jouw unieke stijl. Het hele jaar komen er nieuwe sieraden die helemaal on-trend zijn volgens het laatste seizoen zodat jij er altijd fashionable uit ziet. Hoe dan ook, we’ve got it all. Zo shop je de mooiste <span>oorbellen</span>, <span>kettingen</span>, <span>armbanden</span>, <span>ringen</span>, <span>enkelbandjes</span>, <span>horloges</span> &amp; <span>bedels</span> in onze webshop of in één van onze boutiques
             </p>
-            <a class="trendleesmeer">Lees meer</a>
+            <a class="leesm">Lees meer</a>
         </article>
+    </section>
 
 
 
+</main>
 
-    </body>
-
-    <footer>
-        <ul class="footerul2">
+<footer id="footerd">
+    <ul>
+        <li>
+            <a><img src="images/Add.png" alt="Add button"></a>
+            <h5><b>Betaal-&amp; verzendmethoden</b></h5>
+        </li>
+        <li>
+            <a><img src="images/Add.png" alt="Add button"></a>
+            <h5><b>Service</b></h5>
+        </li>
+        <li>
+            <a><img src="images/Add.png" alt="Add button"></a>
+            <h5><b>Algemeen</b></h5>
+        </li>
+        <li>
+            <a><img src="images/Add.png" alt="Add button"></a>
+            <h5><b>My Jewellery</b></h5>
+        </li>
+        <li>
+            <a><img src="images/Add.png" alt="Add button"></a>
+            <h5><b>Stay in touch</b></h5>
+        </li>
+        <articel>
             <li>
-                <div>
-                    <h5><b>Betaal-&amp; verzendmethoden</b></h5>
-                    <a><img src="images/Add.png" alt="Add button" class="add"></a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h5><b>Service</b></h5>
-                    <a><img src="images/Add.png" alt="Add button" class="add"></a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h5><b>Algemeen</b></h5>
-                    <a><img src="images/Add.png" alt="Add button" class="add"></a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h5><b>My Jewellery</b></h5>
-                    <a><img src="images/Add.png" alt="Add button" class="add"></a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h5><b>Stay in touch</b></h5>
-                    <a><img src="images/Add.png" alt="Add button" class="add"></a>
-                </div>
-            </li>
-            <li>
-                <img src="images/Facebook.png" alt="Facebook logo" class="Facebook">
+                <img src="images/Facebook.png" alt="Facebook logo">
                 <p><b>Facebook</b></p>
             </li>
             <li>
-                <img src="images/Instagram.png" alt="Instagram logo" class="Instagram">
+                <img src="images/Instagram.png" alt="Instagram logo">
                 <p><b>Instagram</b></p>
             </li>
             <li>
-                <img src="images/Pinterest_logo.png" alt="Pinterest logo" class="Pinterest">
+                <img src="images/Pinterest_logo.png" alt="Pinterest logo">
                 <p><b>Pinterest</b></p>
             </li>
             <li>
-                <img src="images/Tiktok.png" alt="Tiktok logo" class="tiktok">
+                <img src="images/Tiktok.png" alt="Tiktok logo">
                 <p><b>Tiktok</b></p>
             </li>
-        </ul>
-        <img src="images/Logo.png" alt="Footer logo" class="footer logo">
-    </footer>
+        </articel>
+        <div>
+            <img src="images/footerlogo.png" alt="Footer logo">
+        </div>
+    </ul>
+</footer>

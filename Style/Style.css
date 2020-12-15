@@ -1,5 +1,6 @@
 body {
     font-family: 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap', sans-serif;
+    overflow-x: hidden;
 }
 
 /* HIER BEGINT DE OPMAAK VAN DE HEADER */
@@ -16,7 +17,7 @@ header section:nth-of-type(1) img:nth-of-type(2) {
     position: absolute;
     height: 6vw;
     margin-left: 2vw;
-    margin-top: 2vw;
+    margin-top: -1vw;
     cursor: pointer;
 }
 
@@ -29,10 +30,31 @@ header section:nth-of-type(1) img:nth-of-type(3) {
     cursor: pointer;
 }
 
+@keyframes big-font0 {
+    0% {
+        height: 10vw;
+    }
+
+    30% {
+        height: 12vw;
+    }
+
+    60% {
+        height: 10vw;
+    }
+}
+
+header section:nth-of-type(1) img:nth-of-type(3) {
+    animation-name: big-font0;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 /* header logo img */
-header section:nth-of-type(1) a img {
+header section:nth-of-type(1) a:nth-of-type(1) img {
     position: absolute;
-    height: 8vw;
+    height: 9vw;
     width: 18vw;
     margin-left: 29vw;
     margin-top: 1.5vw;
@@ -46,26 +68,48 @@ header section:nth-of-type(1) div img:nth-of-type(1) {
     cursor: pointer;
 }
 
-/* header heart img */
-header section:nth-of-type(1) div img:nth-of-type(2) {
-    right: 13vw;
+/* header heart svg */
+header section:nth-of-type(1) #Laag_2 {
+    right: 11vw;
     height: 5.5vw;
     margin: 1vw;
     cursor: pointer;
+    fill: none;
+    stroke: #1d1d1b;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
 }
 
-header section:nth-of-type(1) div img:nth-of-type(2):hover {
+header section:nth-of-type(1) #Laag_2:hover {
+    stroke: #E9B9C4;
+}
+
+
+/* getalletjes */
+header div a span {
+    position: absolute;
+    min-width: 2vw;
+    line-height: 2vw;
+    padding: 1vw 1vw;
     right: 13vw;
-    height: 5.5vw;
-    margin: 1vw;
-    cursor: pointer;
-    fill: pink;
+    top: 3vw;
+    font-size: 4vw;
+    text-align: center;
+    color: white;
+    background-color: pink;
+    border-radius: 25vw;
+    z-index: 200;
+
+    /* initieel is de waarde in de rode bolletjes 0 */
+    /* dan worden ze verborgen */
+    /* display:none; */
 }
 
 /* header bag img */
-header section:nth-of-type(1) div img:nth-of-type(3) {
+header section:nth-of-type(1) img:nth-of-type(2) {
     right: 3vw;
-    height: 7vw;
+    top: 3vw;
+    height: 7.5vw;
     margin: 1vw;
     cursor: pointer;
 }
@@ -109,11 +153,32 @@ header articel p {
     text-decoration: underline;
 }
 
+/* BRON: https://drive.google.com/file/d/1VqMm3oRHZkxV2hAAquJD5vuYmnlu1EdJ/view */
+header articel p .pink {
+    user-select: none;
+    color: white;
+    background: repeating-linear-gradient(-45deg, pink 0%, white 33%, #E1578A 66%, pink 100%);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide0 4s linear infinite forwards;
+}
+
+@keyframes slide0 {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 600vw;
+    }
+}
+
 /* HIER STAAN DE TEKST OPMAAK VAN DE MAIN */
 
 /* HIER BEGINT DE OPMAAK VAN SECTION 1 */
 
-main section:nth-of-type(1) img:nth-of-type(1) {
+main section:nth-of-type(1) #headerphoto {
     height: 100%;
     width: 100.2vw;
     margin: -2vw;
@@ -199,11 +264,42 @@ main #section2 img {
     cursor: pointer;
 }
 
-/* HIER BEGINT DE OPMAAK VAN SECTION 3 */
+@keyframes flip-with-scale {
+    0% {
+        transform: perspective(400px) scaleX(1);
+    }
 
+    40% {
+        transform: perspective(400px) scaleX(-1);
+    }
+
+    80% {
+        transform: perspective(400px) scaleX(1);
+    }
+
+    90% {
+        transform: perspective(400px) scaleX(1);
+    }
+
+    100% {
+        transform: perspective(400px) scaleX(1);
+    }
+}
+
+.oorbellensieraden {
+    animation-name: flip-with-scale;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* HIER BEGINT DE OPMAAK VAN SECTION 3 */
 main #section3 #ulhome2 {
     list-style-type: none;
     margin-left: -10vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 h2 {
@@ -304,9 +400,8 @@ main #section3 #lihome2:nth-of-type(2) p:nth-of-type(1) {
 /* PRIJS VAN GIFTCARD */
 main #section3 #lihome2:nth-of-type(2) p:nth-of-type(2) {
     position: absolute;
-    margin-top: 321.5vw;
+    margin-top: 53vw;
     margin-left: 32vw;
-    top: 60vw;
     font-size: 3.5vw;
     text-decoration: none;
     font-weight: 500;
@@ -391,6 +486,85 @@ main #section3 div:nth-of-type(4) {
     margin-top: 48.5vw;
 }
 
+/* ring img */
+main #section3 #lihome2:nth-of-type(4) img:nth-of-type(1) {
+    display: block;
+    height: 45vw;
+    width: 31vw;
+    margin-left: 97vw;
+    margin-top: 2vw;
+}
+
+/* container 1  */
+main #section3 #lihome2:nth-of-type(4) {
+    position: absolute;
+    width: 50%;
+}
+
+/* container hover */
+main #section3 #lihome2:nth-of-type(4):hover .ring2 {
+    opacity: 1;
+}
+
+.ring2 {
+    position: absolute;
+    height: 45vw;
+    width: 31vw;
+    margin-left: 97vw;
+    margin-top: -45vw;
+    opacity: 0;
+}
+
+/* Prijs van ring */
+main #section3 p:nth-of-type(5) {
+    position: absolute;
+    font-size: 3.5vw;
+    margin-left: 99vw;
+    margin-top: 52.9vw;
+    width: 31vw;
+}
+
+/* title ring */
+main #section3 p:nth-of-type(4) {
+    position: absolute;
+    font-weight: 100;
+    font-size: 3vw;
+    margin-top: 48vw;
+    margin-left: 99vw;
+}
+
+/* gold 1 */
+main section:nth-of-type(3) div:nth-of-type(5) {
+    background-image: linear-gradient(to bottom left, goldenrod, gold);
+    border-style: solid;
+    border-width: 1.4px;
+    border-color: goldenrod;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 250px;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 119vw;
+    margin-top: 48vw;
+}
+
+/* silver 1 */
+main section:nth-of-type(3) div:nth-of-type(6) {
+    background-image: linear-gradient(to top left, gray, gainsboro);
+    border-style: solid;
+    border-width: 1.4px;
+    border-color: gray;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 250px;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 123vw;
+    margin-top: 48vw;
+}
+
 /* HIER BEGINT DE OPMAAK VAN SECTION 4 */
 
 /* black blok 1 */
@@ -425,6 +599,35 @@ main section:nth-of-type(4) article:nth-of-type(1) a {
     padding: 1vw 4vw;
     border-radius: 2px;
     cursor: pointer;
+}
+
+@keyframes flip-with-scale2 {
+    0% {
+        transform: perspective(400px) scaleX(1);
+    }
+
+    40% {
+        transform: perspective(400px) scaleX(-1);
+    }
+
+    80% {
+        transform: perspective(400px) scaleX(1);
+    }
+
+    90% {
+        transform: perspective(400px) scaleX(1);
+    }
+
+    100% {
+        transform: perspective(400px) scaleX(1);
+    }
+}
+
+main section:nth-of-type(4) article:nth-of-type(1) a {
+    animation-name: flip-with-scale2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 /* black blok 1 p */
@@ -469,6 +672,35 @@ main section:nth-of-type(4) article:nth-of-type(2) a {
     padding: 1vw 4vw;
     border-radius: 2px;
     cursor: pointer;
+}
+
+@keyframes flip-with-scale3 {
+    0% {
+        transform: perspective(400px) scaleX(1);
+    }
+
+    40% {
+        transform: perspective(400px) scaleX(-1);
+    }
+
+    80% {
+        transform: perspective(400px) scaleX(1);
+    }
+
+    90% {
+        transform: perspective(400px) scaleX(1);
+    }
+
+    100% {
+        transform: perspective(400px) scaleX(1);
+    }
+}
+
+main section:nth-of-type(4) article:nth-of-type(2) a {
+    animation-name: flip-with-scale3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 /* black blok 2 p */
@@ -549,6 +781,51 @@ main section:nth-of-type(5) div p:nth-of-type(1) {
     margin-left: 4.5vw;
     margin-top: 7vw;
     text-shadow: 2px 2px black;
+    z-index: 4;
+}
+
+@keyframes big-font {
+    0% {
+        font-size: 10vw;
+        z-index: 6;
+    }
+
+    25% {
+        font-size: 14vw;
+        z-index: 6;
+    }
+
+    50% {
+        font-size: 10vw;
+        z-index: 6;
+    }
+
+    60% {
+        font-size: 10vw;
+    }
+
+    70% {
+        font-size: 10vw;
+    }
+
+    80% {
+        font-size: 10vw;
+    }
+
+    90% {
+        font-size: 10vw;
+    }
+
+    100% {
+        font-size: 10vw;
+    }
+}
+
+main section:nth-of-type(5) div p:nth-of-type(1) {
+    animation-name: big-font;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 /* beige korting  */
@@ -560,6 +837,42 @@ main section:nth-of-type(5) div p:nth-of-type(2) {
     -moz-transform: rotate(-355deg);
     margin-left: 4.5vw;
     margin-top: 17vw;
+}
+
+@keyframes big-font2 {
+
+    0%,
+    60% {
+        font-size: 5vw;
+    }
+
+    60% {
+        z-index: 5;
+        font-size: 5vw;
+    }
+
+    70% {
+        font-size: 6.5vw;
+    }
+
+    80% {
+        font-size: 5vw;
+    }
+
+    90% {
+        font-size: 5vw;
+    }
+
+    100% {
+        font-size: 5vw;
+    }
+}
+
+main section:nth-of-type(5) div p:nth-of-type(2) {
+    animation-name: big-font2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 /* HIER BEGINT DE OPMAAK VAN SECTION 6 */
@@ -627,6 +940,27 @@ main section:nth-of-type(7) p {
     font-size: 3vw;
     margin-left: 4vw;
     line-height: 1.6;
+}
+
+/* BRON: https://drive.google.com/file/d/1VqMm3oRHZkxV2hAAquJD5vuYmnlu1EdJ/view */
+main section:nth-of-type(7) p span:nth-of-type(1) {
+    user-select: none;
+    color: white;
+    background: repeating-linear-gradient(-45deg, pink 0%, white 33%, #E1578A 66%, pink 100%);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 4s linear infinite forwards;
+}
+
+@keyframes slide {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 600vw;
+    }
 }
 
 /* HIER BEGINT DE OPMAAK VAN SECTION 8 */
@@ -710,6 +1044,27 @@ main section:nth-of-type(9) a {
     font-size: 3vw;
     color: pink;
     cursor: pointer;
+}
+
+/* BRON: https://drive.google.com/file/d/1VqMm3oRHZkxV2hAAquJD5vuYmnlu1EdJ/view */
+main section:nth-of-type(9) a {
+    user-select: none;
+    color: white;
+    background: repeating-linear-gradient(-45deg, pink 0%, white 33%, #E1578A 66%, pink 100%);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide2 4s linear infinite forwards;
+}
+
+@keyframes slide2 {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 600vw;
+    }
 }
 
 footer ul {
@@ -1070,6 +1425,35 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1):hover .detailsie
     opacity: 0;
 }
 
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) #svg {
+    background-color: white;
+    height: 6.7vw;
+    width: 6.7vw;
+    border-radius: 25vw;
+    position: absolute;
+    left: 27.2vw;
+    top: 90.3vw;
+}
+
+/* heart svg */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) #Laag_2 {
+    position: absolute;
+    left: 27.3vw;
+    top: 91vw;
+    z-index: 20;
+    height: 4vw;
+    margin: 1vw;
+    cursor: pointer;
+    fill: none;
+    stroke: #1d1d1b;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+}
+
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) #Laag_2:hover {
+    stroke: #E9B9C4;
+}
+
 
 /* TITEL SIERAAD1 */
 main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) h5 {
@@ -1149,9 +1533,39 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2):hover .detailsie
 .detailsieraad2b {
     position: absolute;
     height: 71vw;
+    width: 47.2vw;
     margin-left: 39.5vw;
     margin-top: 88vw;
     opacity: 0;
+}
+
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) #svg {
+    background-color: white;
+    height: 6.7vw;
+    width: 6.7vw;
+    border-radius: 25vw;
+    position: absolute;
+    left: 77.2vw;
+    top: 90.3vw;
+}
+
+/* heart svg */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) #Laag_2 {
+    position: absolute;
+    left: 77.6vw;
+    top: 91vw;
+    z-index: 20;
+    height: 4vw;
+    margin: 1vw;
+    cursor: pointer;
+    fill: none;
+    stroke: #1d1d1b;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+}
+
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) #Laag_2:hover {
+    stroke: #E9B9C4;
 }
 
 /* TITEL SIERAAD2 */
@@ -1242,9 +1656,39 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3):hover .detailsie
 .detailsieraad3b {
     position: absolute;
     height: 71vw;
+    width: 47.2vw;
     margin-left: -11vw;
     margin-top: 175vw;
     opacity: 0;
+}
+
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) #svg {
+    background-color: white;
+    height: 6.7vw;
+    width: 6.7vw;
+    border-radius: 25vw;
+    position: absolute;
+    left: 27.2vw;
+    top: 177.3vw;
+}
+
+/* heart svg */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) #Laag_2 {
+    position: absolute;
+    left: 27.2vw;
+    top: 178vw;
+    z-index: 20;
+    height: 4vw;
+    margin: 1vw;
+    cursor: pointer;
+    fill: none;
+    stroke: #1d1d1b;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+}
+
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) #Laag_2:hover {
+    stroke: #E9B9C4;
 }
 
 /* TITEL SIERAAD3 */
@@ -1314,6 +1758,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) #zilverd3 {
 main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) img {
     position: absolute;
     height: 71vw;
+    width: 47.2vw;
     margin-left: 39.5vw;
     margin-top: 175vw;
 }
@@ -1337,6 +1782,35 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4):hover .detailsie
     margin-left: 39.5vw;
     margin-top: 175vw;
     opacity: 0;
+}
+
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) #svg {
+    background-color: white;
+    height: 6.7vw;
+    width: 6.7vw;
+    border-radius: 25vw;
+    position: absolute;
+    left: 77.5vw;
+    top: 177.3vw;
+}
+
+/* heart svg */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) #Laag_2 {
+    position: absolute;
+    left: 77.6vw;
+    top: 178vw;
+    z-index: 20;
+    height: 4vw;
+    margin: 1vw;
+    cursor: pointer;
+    fill: none;
+    stroke: #1d1d1b;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+}
+
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) #Laag_2:hover {
+    stroke: #E9B9C4;
 }
 
 /* TITEL SIERAAD4 */
@@ -1444,9 +1918,39 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6):hover .detailsie
 .detailsieraad5b {
     position: absolute;
     height: 71vw;
+    width: 47.2vw;
     margin-left: 39.4vw;
     margin-top: 262vw;
     opacity: 0;
+}
+
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #svg {
+    background-color: white;
+    height: 6.7vw;
+    width: 6.7vw;
+    border-radius: 25vw;
+    position: absolute;
+    left: 77.5vw;
+    top: 264.4vw;
+}
+
+/* heart svg */
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #Laag_2 {
+    position: absolute;
+    left: 77.6vw;
+    top: 265.2vw;
+    z-index: 20;
+    height: 4vw;
+    margin: 1vw;
+    cursor: pointer;
+    fill: none;
+    stroke: #1d1d1b;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+}
+
+main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #Laag_2:hover {
+    stroke: #E9B9C4;
 }
 
 /* TITEL SIERAAD5 */
@@ -1535,9 +2039,20 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #zilverd5 {
 
 #row6 img {
     position: absolute;
-    height: 10vw;
+    height: 9vw;
     margin-left: 11vw;
-    margin-top: -12vw;
+    margin-top: -11.2vw;
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+    }
 }
 
 .blackline {

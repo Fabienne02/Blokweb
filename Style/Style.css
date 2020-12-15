@@ -311,7 +311,7 @@ h2 {
 }
 
 /* calander img */
-main #section3 #lihome2:nth-of-type(1) img:nth-of-type(1) {
+main #section3 #ulhome2 #lihome2:nth-of-type(1) img:nth-of-type(1) {
     display: block;
     height: 45vw;
     width: 31vw;
@@ -320,13 +320,13 @@ main #section3 #lihome2:nth-of-type(1) img:nth-of-type(1) {
 }
 
 /* container 1  */
-main #section3 #lihome2:nth-of-type(1) {
+main #section3 #ulhome2 #lihome2:nth-of-type(1) {
     position: absolute;
     width: 50%;
 }
 
 /* container hover */
-main #section3 #lihome2:nth-of-type(1):hover .calander2 {
+main #section3 #ulhome2 #lihome2:nth-of-type(1):hover .calander2 {
     opacity: 1;
 }
 
@@ -340,15 +340,15 @@ main #section3 #lihome2:nth-of-type(1):hover .calander2 {
 }
 
 /* title calander */
-main #section3 p:nth-of-type(1) {
+main #section3 #ulhome2 #lihome2:nth-of-type(1) #p1 {
     position: absolute;
     font-weight: 100;
     font-size: 3vw;
-    margin-top: 48vw;
+    margin-top: 1vw;
 }
 
 /* gold 1 */
-main section:nth-of-type(3) div:nth-of-type(1) {
+main section:nth-of-type(3) #ulhome2 #lihome2:nth-of-type(1) div:nth-of-type(1) {
     background-image: linear-gradient(to bottom left, goldenrod, gold);
     border-style: solid;
     border-width: 1.4px;
@@ -364,7 +364,7 @@ main section:nth-of-type(3) div:nth-of-type(1) {
 }
 
 /* silver 1 */
-main section:nth-of-type(3) div:nth-of-type(2) {
+main section:nth-of-type(3) #ulhome2 #lihome2:nth-of-type(1) div:nth-of-type(2) {
     background-image: linear-gradient(to top left, gray, gainsboro);
     border-style: solid;
     border-width: 1.4px;
@@ -380,7 +380,7 @@ main section:nth-of-type(3) div:nth-of-type(2) {
 }
 
 /* GIFTCARD IMG */
-main #section3 #lihome2:nth-of-type(2) img:nth-of-type(1) {
+main #section3 #ulhome2 #lihome2:nth-of-type(2) img:nth-of-type(1) {
     position: absolute;
     height: 45vw;
     width: 31vw;
@@ -389,7 +389,7 @@ main #section3 #lihome2:nth-of-type(2) img:nth-of-type(1) {
 }
 
 /* GIFTCARD TITLE */
-main #section3 #lihome2:nth-of-type(2) p:nth-of-type(1) {
+main #section3 #ulhome2 #lihome2:nth-of-type(2) p:nth-of-type(1) {
     position: absolute;
     font-weight: 100;
     font-size: 3vw;
@@ -398,7 +398,7 @@ main #section3 #lihome2:nth-of-type(2) p:nth-of-type(1) {
 }
 
 /* PRIJS VAN GIFTCARD */
-main #section3 #lihome2:nth-of-type(2) p:nth-of-type(2) {
+main #section3 #ulhome2 #lihome2:nth-of-type(2) p:nth-of-type(2) {
     position: absolute;
     margin-top: 53vw;
     margin-left: 32vw;
@@ -408,7 +408,16 @@ main #section3 #lihome2:nth-of-type(2) p:nth-of-type(2) {
 }
 
 /* PRIJS VAN SIRAAD 3 */
-main #section3 p:nth-of-type(2) {
+main #section3 #ulhome2 #lihome2:nth-of-type(3) p:nth-of-type(2) {
+    position: absolute;
+    font-weight: 500;
+    font-size: 3.5vw;
+    margin-top: 52.8vw;
+    margin-left: 65vw;
+}
+
+/* SIRAAD 3 TITLE */
+main #section3 #ulhome2 #lihome2:nth-of-type(3) p:nth-of-type(1) {
     position: absolute;
     font-weight: 100;
     font-size: 3vw;
@@ -417,7 +426,7 @@ main #section3 p:nth-of-type(2) {
 }
 
 /* SIERAAD 3 */
-main #section3 #lihome2:nth-of-type(3) img:nth-of-type(1) {
+main #section3 #ulhome2 #lihome2:nth-of-type(3) img:nth-of-type(1) {
     position: absolute;
     height: 45vw;
     width: 31vw;
@@ -426,14 +435,14 @@ main #section3 #lihome2:nth-of-type(3) img:nth-of-type(1) {
 }
 
 /* CONTAINER */
-main #section3 #lihome2:nth-of-type(3) {
+main #section3 #ulhome2 #lihome2:nth-of-type(3) {
     position: absolute;
     width: 50%;
 }
 
 
 /* CONTAINER HOVER */
-main #section3 #lihome2:nth-of-type(3):hover .sieraad1b {
+main #section3 #ulhome2 #lihome2:nth-of-type(3):hover .sieraad1b {
     opacity: 1;
 }
 
@@ -446,48 +455,9 @@ main #section3 #lihome2:nth-of-type(3):hover .sieraad1b {
     opacity: 0;
 }
 
-/* Prijs van al */
-main #section3 p:nth-of-type(3) {
-    position: absolute;
-    font-size: 3.5vw;
-    margin-left: 65vw;
-    margin-top: 52.9vw;
-}
-
-/* gold 2 */
-main #section3 div:nth-of-type(3) {
-    background-image: linear-gradient(to bottom left, goldenrod, gold);
-    border-style: solid;
-    border-width: 1.4px;
-    border-color: goldenrod;
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    border-radius: 250px;
-    width: 2vw;
-    height: 2vw;
-    margin-left: 86vw;
-    margin-top: 48.5vw;
-}
-
-/* silver 2 */
-main #section3 div:nth-of-type(4) {
-    background-image: linear-gradient(to top left, gray, gainsboro);
-    border-style: solid;
-    border-width: 1.4px;
-    border-color: gray;
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    border-radius: 250px;
-    width: 2vw;
-    height: 2vw;
-    margin-left: 90vw;
-    margin-top: 48.5vw;
-}
 
 /* ring img */
-main #section3 #lihome2:nth-of-type(4) img:nth-of-type(1) {
+main #section3 #ulhome2 #lihome2:nth-of-type(4) img:nth-of-type(1) {
     display: block;
     height: 45vw;
     width: 31vw;
@@ -496,13 +466,13 @@ main #section3 #lihome2:nth-of-type(4) img:nth-of-type(1) {
 }
 
 /* container 1  */
-main #section3 #lihome2:nth-of-type(4) {
+main #section3 #ulhome2 #lihome2:nth-of-type(4) {
     position: absolute;
     width: 50%;
 }
 
 /* container hover */
-main #section3 #lihome2:nth-of-type(4):hover .ring2 {
+main #section3 #ulhome2 #lihome2:nth-of-type(4):hover .ring2 {
     opacity: 1;
 }
 
@@ -516,7 +486,7 @@ main #section3 #lihome2:nth-of-type(4):hover .ring2 {
 }
 
 /* Prijs van ring */
-main #section3 p:nth-of-type(5) {
+main #section3 #ulhome2 #lihome2:nth-of-type(4) p:nth-of-type(2) {
     position: absolute;
     font-size: 3.5vw;
     margin-left: 99vw;
@@ -525,7 +495,7 @@ main #section3 p:nth-of-type(5) {
 }
 
 /* title ring */
-main #section3 p:nth-of-type(4) {
+main #section3 #ulhome2 #lihome2:nth-of-type(4) p:nth-of-type(1) {
     position: absolute;
     font-weight: 100;
     font-size: 3vw;
@@ -534,7 +504,7 @@ main #section3 p:nth-of-type(4) {
 }
 
 /* gold 1 */
-main section:nth-of-type(3) div:nth-of-type(5) {
+main section:nth-of-type(3) #ulhome2 #lihome2:nth-of-type(4) div:nth-of-type(1) {
     background-image: linear-gradient(to bottom left, goldenrod, gold);
     border-style: solid;
     border-width: 1.4px;
@@ -550,7 +520,7 @@ main section:nth-of-type(3) div:nth-of-type(5) {
 }
 
 /* silver 1 */
-main section:nth-of-type(3) div:nth-of-type(6) {
+main section:nth-of-type(3) #ulhome2 #lihome2:nth-of-type(4) div:nth-of-type(2) {
     background-image: linear-gradient(to top left, gray, gainsboro);
     border-style: solid;
     border-width: 1.4px;

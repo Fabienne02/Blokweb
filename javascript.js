@@ -5,71 +5,176 @@
 /*eslint 'no-console': 0*/
 
 var image_tracker = 'img1';
- 
- function change(){
- var image = document.getElementById('headerphoto');
- if(image_tracker=='img1'){
- image.src='Images/20po.jpg';
- image_tracker='img2';
- }
-     
- else{
- image.src='Images/Header_photo.jpg';
- image_tracker='img1';
- }
- }
- 
- var timer = setInterval('change();',5000); 
+
+function change() {
+    var image = document.getElementById('headerphoto');
+    if (image_tracker == 'img1') {
+        image.src = 'Images/20po.jpg';
+        image_tracker = 'img2';
+    } else {
+        image.src = 'Images/Header_photo.jpg';
+        image_tracker = 'img1';
+    }
+}
+
+var timer = setInterval('change();', 5000);
 
 //BRON: https://www.youtube.com/watch?v=aNDHAEKvEl8
 
-// HARTJES CODE
 
-// var aquarium = document.getElementById('aquariumLeeg'); 
+const button1 = document.querySelectorAll("#lidetail2:nth-of-type(1) #svg, #lidetail2:nth-of-type(1) #Laag_2")
+var inDruk1 = document.querySelector("#lidetail2:nth-of-type(1) #Laag_2")
+var teller1 = document.querySelector("#spanheart"),
+    count = 1;
+var min = 1;
+var statusHeartEen = false
 
-var emptysvg = document.getElementById('Laag_2');
-svg.src = 'Images/heart.svg';
+button1.forEach((inDruk1) => {
+    inDruk1.addEventListener("click", voegToe1)
+});
 
-var currentamount = '0';
+function voegToe1() {
+    if (statusHeartEen == true) {
+        count -= 1;
+        teller1.innerHTML -= min;
 
-document.querySelector("header div a span").innerHTML ='0';
+        document.querySelector("#lidetail2:nth-of-type(1) #Laag_2").style.fill = "none";
+        document.querySelector("#lidetail2:nth-of-type(1) #Laag_2").style.stroke = "black";
 
-function newamount1() {
-    if (currentamount == '0') {
-        document.querySelector("header div a span").innerHTML = '1';
-        svg.src = 'Images/heartfilled.svg';
-    
-        document.querySelector("header div a span").innerHTML = '1';
-        
-        currentamount = '1';
-        
-    } else if (currentamount == '1') {
-        document.querySelector("header div a span").innerHTML = '0';
-        svg.src = 'Images/heart.svg';
-    
-        document.querySelector("header div a span").innerHTML = '0';
-        
-        currentamount = '0';
+        statusHeartEen = false;
+
+    } else if (statusHeartEen == false) {
+        count += 1;
+        teller1.innerHTML = parseInt(teller1.innerHTML) + 1
+        document.querySelector("#lidetail2:nth-of-type(1) #Laag_2").style.fill = "pink";
+        document.querySelector("#lidetail2:nth-of-type(1) #Laag_2").style.stroke = "pink";
+
+        statusHeartEen = true;
     }
+
 }
 
-document.getElementById("svg").addEventListener("click", newamount1);
+const button = document.querySelectorAll("#lidetail2:nth-of-type(2) #svg, #lidetail2:nth-of-type(2) #Laag_2")
+var inDruk = document.querySelector("#lidetail2:nth-of-type(2)#Laag_2")
+var min = 1;
+var statusHeartTwee = false
 
-function newamount2() {
-    if (currentamount == '1') {
-        document.querySelector("header div a span").innerHTML = '2';
-        svg.src = 'Images/heartfilled.svg';
-        
-        currentamount = '2';
-        
-    } else if (currentamount == '2') {
-        document.querySelector("header div a span").innerHTML = '1';
-        svg.src = 'Images/heart.svg';
-        
-        currentamount = '1';
+
+button.forEach((inDruk) => {
+    inDruk.addEventListener("click", voegToe)
+});
+
+function voegToe() {
+    if (statusHeartTwee == true) {
+        count -= 1;
+        teller1.innerHTML -= min;
+
+        document.querySelector("#lidetail2:nth-of-type(2) #Laag_2").style.fill = "none";
+        document.querySelector("#lidetail2:nth-of-type(2) #Laag_2").style.stroke = "black";
+
+        statusHeartTwee = false;
+
+    } else if (statusHeartTwee == false) {
+        count += 1;
+         teller1.innerHTML = parseInt(teller1.innerHTML) + 1
+        document.querySelector("#lidetail2:nth-of-type(2) #Laag_2").style.fill = "pink";
+        document.querySelector("#lidetail2:nth-of-type(2) #Laag_2").style.stroke = "pink";
+
+        statusHeartTwee = true;
     }
+
 }
 
-document.getElementById("svg").addEventListener("click", newamount2);
+const buttonq = document.querySelectorAll("#lidetail2:nth-of-type(3) #svg, #lidetail2:nth-of-type(3) #Laag_2")
+var inDrukq = document.querySelector("#lidetail2:nth-of-type(3) #Laag_2")
+var min = 1;
+var statusHeartDrie = false
 
- 
+
+buttonq.forEach((inDrukq) => {
+    inDrukq.addEventListener("click", voegToeq)
+});
+
+function voegToeq() {
+    if (statusHeartDrie == true) {
+        count -= 1;
+        teller1.innerHTML -= min;
+
+        document.querySelector("#lidetail2:nth-of-type(3) #Laag_2").style.fill = "none";
+        document.querySelector("#lidetail2:nth-of-type(3) #Laag_2").style.stroke = "black";
+
+        statusHeartDrie = false;
+
+    } else if (statusHeartDrie == false) {
+        count += 1;
+         teller1.innerHTML = parseInt(teller1.innerHTML) + 1
+        document.querySelector("#lidetail2:nth-of-type(3) #Laag_2").style.fill = "pink";
+        document.querySelector("#lidetail2:nth-of-type(3) #Laag_2").style.stroke = "pink";
+
+        statusHeartDrie = true;
+    }
+
+}
+
+const buttonz = document.querySelectorAll("#lidetail2:nth-of-type(4) #svg, #lidetail2:nth-of-type(4) #Laag_2")
+var inDrukz = document.querySelector("#lidetail2:nth-of-type(4) #Laag_2")
+var min = 1;
+var statusHeartVier = false
+
+
+buttonz.forEach((inDrukz) => {
+    inDrukz.addEventListener("click", voegToez)
+});
+
+function voegToez() {
+    if (statusHeartVier == true) {
+        count -= 1;
+        teller1.innerHTML -= min;
+
+        document.querySelector("#lidetail2:nth-of-type(4) #Laag_2").style.fill = "none";
+        document.querySelector("#lidetail2:nth-of-type(4) #Laag_2").style.stroke = "black";
+
+        statusHeartVier = false;
+
+    } else if (statusHeartVier == false) {
+        count += 1;
+         teller1.innerHTML = parseInt(teller1.innerHTML) + 1
+        document.querySelector("#lidetail2:nth-of-type(4) #Laag_2").style.fill = "pink";
+        document.querySelector("#lidetail2:nth-of-type(4) #Laag_2").style.stroke = "pink";
+
+        statusHeartVier = true;
+    }
+
+}
+
+const buttonw = document.querySelectorAll("#lidetail2:nth-of-type(6) #svg, #lidetail2:nth-of-type(6) #Laag_2")
+var inDrukw = document.querySelector("#lidetail2:nth-of-type(6) #Laag_2")
+var min = 1;
+var statusHeartVijf = false
+
+
+buttonw.forEach((inDrukw) => {
+    inDrukw.addEventListener("click", voegToew)
+});
+
+function voegToew() {
+    if (statusHeartVijf == true) {
+        count -= 1;
+        teller1.innerHTML -= min;
+
+        document.querySelector("#lidetail2:nth-of-type(6) #Laag_2").style.fill = "none";
+        document.querySelector("#lidetail2:nth-of-type(6) #Laag_2").style.stroke = "black";
+
+        statusHeartVijf = false;
+
+    } else if (statusHeartVijf == false) {
+        count += 1;
+         teller1.innerHTML = parseInt(teller1.innerHTML) + 1
+        document.querySelector("#lidetail2:nth-of-type(6) #Laag_2").style.fill = "pink";
+        document.querySelector("#lidetail2:nth-of-type(6) #Laag_2").style.stroke = "pink";
+
+        statusHeartVijf = true;
+    }
+
+}
+

@@ -161,7 +161,7 @@ Divjes en classes verbeteren.
 ## Breakdownschets (week 1)
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
-<img src="images/Breakoutschets.jpg" width="370px" alt="Breakdownschets"> 
+<img src="images/Breakoutschets.png" width="370px" alt="Breakdownschets"> 
 
 
 
@@ -180,5 +180,5 @@ Divjes en classes verbeteren.
 <img src="images/homescherm 2.png" width="375px" alt="Interface Homescherm"> 
 
 **Screenshot(s) van de tweede pagina (small screen):**
-<img src="images/detailpagina.png" width="375px" alt="Interface Detailpagina">
+<img src="images/detailpagina.jpg" width="375px" alt="Interface Detailpagina">
 

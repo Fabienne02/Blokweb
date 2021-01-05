@@ -1,6 +1,27 @@
+/* OPMAAK VAN DE BODY & TOEGANKELIJKHEID */
 body {
     font-family: 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap', sans-serif;
     overflow-x: hidden;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline 3px solid black;
+}
+
+a:focus {
+    outline: 3px solid pink;
+}
+
+button:hover {
+    text-decoration: underline 3px solid black;
+}
+
+button:focus {
+    outline: 3px solid pink;
 }
 
 /* HIER BEGINT DE OPMAAK VAN DE HEADER */
@@ -30,6 +51,7 @@ header section:nth-of-type(1) img:nth-of-type(3) {
     cursor: pointer;
 }
 
+/* header bel animation */
 @keyframes big-font0 {
     0% {
         height: 10vw;
@@ -44,6 +66,7 @@ header section:nth-of-type(1) img:nth-of-type(3) {
     }
 }
 
+/* header bel animation eigenschappen */
 header section:nth-of-type(1) img:nth-of-type(3) {
     animation-name: big-font0;
     animation-duration: 2.5s;
@@ -99,10 +122,6 @@ header div a span {
     background-color: pink;
     border-radius: 25vw;
     z-index: 200;
-
-    /* initieel is de waarde in de rode bolletjes 0 */
-    /* dan worden ze verborgen */
-    /* display:none; */
 }
 
 /* header bag img */
@@ -122,8 +141,8 @@ header section:nth-of-type(1) div {
     margin-top: -9vw;
 }
 
-/* header articel verzending */
-header articel {
+/* header article verzending */
+header article {
     display: flex;
     background-color: black;
     margin: -2vw;
@@ -136,25 +155,25 @@ header articel {
     font-size: 4vw;
 }
 
-/* header articel span */
+/* header article span */
 .pink {
     color: pink;
     cursor: pointer;
 }
 
-/* header articel p */
-header articel p {
+/* header article p */
+header article p {
     margin-left: 22vw;
     margin-top: 3vw;
 }
 
-/* header articel span hover */
+/* header article span hover */
 .pink:hover {
     text-decoration: underline;
 }
 
 /* BRON: https://drive.google.com/file/d/1VqMm3oRHZkxV2hAAquJD5vuYmnlu1EdJ/view */
-header articel p .pink {
+header article p .pink {
     user-select: none;
     color: white;
     background: repeating-linear-gradient(-45deg, pink 0%, white 33%, #E1578A 66%, pink 100%);
@@ -178,6 +197,7 @@ header articel p .pink {
 
 /* HIER BEGINT DE OPMAAK VAN SECTION 1 */
 
+/* main section 1 foto homepagina */
 main section:nth-of-type(1) #headerphoto {
     height: 100%;
     width: 100.2vw;
@@ -186,6 +206,7 @@ main section:nth-of-type(1) #headerphoto {
     margin-left: -2.3vw;
 }
 
+/* main section 1 knop */
 main section:nth-of-type(1) a {
     position: absolute;
     text-align: center;
@@ -195,7 +216,6 @@ main section:nth-of-type(1) a {
     border-radius: 10px;
     padding: 4vw 6vw;
     font-size: 4vw;
-    cursor: pointer;
 }
 
 main section:nth-of-type(1) a:hover {
@@ -204,7 +224,9 @@ main section:nth-of-type(1) a:hover {
 }
 
 /* /* HIER BEGINT DE OPMAAK VAN SECTION 2 */
-*/ h1 {
+
+/* categorieen h1 */
+    h1 {
     font-weight: normal;
     font-size: 4vw;
     margin-top: 2vw;
@@ -264,6 +286,7 @@ main #section2 img {
     cursor: pointer;
 }
 
+/* animatie sieraden knop */
 @keyframes flip-with-scale {
     0% {
         transform: perspective(400px) scaleX(1);
@@ -286,6 +309,7 @@ main #section2 img {
     }
 }
 
+/* animation sieraden knop eigenschappen */
 .oorbellensieraden {
     animation-name: flip-with-scale;
     animation-duration: 4s;
@@ -311,7 +335,7 @@ h2 {
 }
 
 /* calander img */
-main #section3 #ulhome2 #lihome2:nth-of-type(1) img:nth-of-type(1) {
+main #section3 #ulhome2 li:nth-of-type(1) img:nth-of-type(1) {
     display: block;
     height: 45vw;
     width: 31vw;
@@ -320,13 +344,13 @@ main #section3 #ulhome2 #lihome2:nth-of-type(1) img:nth-of-type(1) {
 }
 
 /* container 1  */
-main #section3 #ulhome2 #lihome2:nth-of-type(1) {
+main #section3 #ulhome2 li:nth-of-type(1) {
     position: absolute;
     width: 50%;
 }
 
 /* container hover */
-main #section3 #ulhome2 #lihome2:nth-of-type(1):hover .calander2 {
+main #section3 #ulhome2 li:nth-of-type(1):hover .calander2 {
     opacity: 1;
 }
 
@@ -340,7 +364,7 @@ main #section3 #ulhome2 #lihome2:nth-of-type(1):hover .calander2 {
 }
 
 /* title calander */
-main #section3 #ulhome2 #lihome2:nth-of-type(1) #p1 {
+main #section3 #ulhome2 li:nth-of-type(1) #p1 {
     position: absolute;
     font-weight: 100;
     font-size: 3vw;
@@ -348,7 +372,7 @@ main #section3 #ulhome2 #lihome2:nth-of-type(1) #p1 {
 }
 
 /* gold 1 */
-main section:nth-of-type(3) #ulhome2 #lihome2:nth-of-type(1) div:nth-of-type(1) {
+main section:nth-of-type(3) #ulhome2 li:nth-of-type(1) div:nth-of-type(1) {
     background-image: linear-gradient(to bottom left, goldenrod, gold);
     border-style: solid;
     border-width: 1.4px;
@@ -360,11 +384,11 @@ main section:nth-of-type(3) #ulhome2 #lihome2:nth-of-type(1) div:nth-of-type(1) 
     width: 2vw;
     height: 2vw;
     margin-left: 22vw;
-    margin-top: 48.5vw;
+    margin-top: 1vw;
 }
 
 /* silver 1 */
-main section:nth-of-type(3) #ulhome2 #lihome2:nth-of-type(1) div:nth-of-type(2) {
+main section:nth-of-type(3) #ulhome2 li:nth-of-type(1) div:nth-of-type(2) {
     background-image: linear-gradient(to top left, gray, gainsboro);
     border-style: solid;
     border-width: 1.4px;
@@ -376,11 +400,11 @@ main section:nth-of-type(3) #ulhome2 #lihome2:nth-of-type(1) div:nth-of-type(2) 
     width: 2vw;
     height: 2vw;
     margin-left: 26vw;
-    margin-top: 48.5vw;
+    margin-top: 1vw;
 }
 
 /* GIFTCARD IMG */
-main #section3 #ulhome2 #lihome2:nth-of-type(2) img:nth-of-type(1) {
+main #section3 #ulhome2 li:nth-of-type(2) img:nth-of-type(1) {
     position: absolute;
     height: 45vw;
     width: 31vw;
@@ -389,7 +413,7 @@ main #section3 #ulhome2 #lihome2:nth-of-type(2) img:nth-of-type(1) {
 }
 
 /* GIFTCARD TITLE */
-main #section3 #ulhome2 #lihome2:nth-of-type(2) p:nth-of-type(1) {
+main #section3 #ulhome2 li:nth-of-type(2) p:nth-of-type(1) {
     position: absolute;
     font-weight: 100;
     font-size: 3vw;
@@ -398,26 +422,27 @@ main #section3 #ulhome2 #lihome2:nth-of-type(2) p:nth-of-type(1) {
 }
 
 /* PRIJS VAN GIFTCARD */
-main #section3 #ulhome2 #lihome2:nth-of-type(2) p:nth-of-type(2) {
+main #section3 #ulhome2 li:nth-of-type(2) p:nth-of-type(2) {
     position: absolute;
     margin-top: 53vw;
     margin-left: 32vw;
     font-size: 3.5vw;
     text-decoration: none;
     font-weight: 500;
+    z-index: 100;
 }
 
 /* PRIJS VAN SIRAAD 3 */
-main #section3 #ulhome2 #lihome2:nth-of-type(3) p:nth-of-type(2) {
+main #section3 #ulhome2 li:nth-of-type(3) p:nth-of-type(2) {
     position: absolute;
     font-weight: 500;
     font-size: 3.5vw;
-    margin-top: 52.8vw;
+    margin-top: 53vw;
     margin-left: 65vw;
 }
 
 /* SIRAAD 3 TITLE */
-main #section3 #ulhome2 #lihome2:nth-of-type(3) p:nth-of-type(1) {
+main #section3 #ulhome2 li:nth-of-type(3) p:nth-of-type(1) {
     position: absolute;
     font-weight: 100;
     font-size: 3vw;
@@ -426,7 +451,7 @@ main #section3 #ulhome2 #lihome2:nth-of-type(3) p:nth-of-type(1) {
 }
 
 /* SIERAAD 3 */
-main #section3 #ulhome2 #lihome2:nth-of-type(3) img:nth-of-type(1) {
+main #section3 #ulhome2 li:nth-of-type(3) img:nth-of-type(1) {
     position: absolute;
     height: 45vw;
     width: 31vw;
@@ -435,14 +460,14 @@ main #section3 #ulhome2 #lihome2:nth-of-type(3) img:nth-of-type(1) {
 }
 
 /* CONTAINER */
-main #section3 #ulhome2 #lihome2:nth-of-type(3) {
+main #section3 #ulhome2 li:nth-of-type(3) {
     position: absolute;
     width: 50%;
 }
 
 
 /* CONTAINER HOVER */
-main #section3 #ulhome2 #lihome2:nth-of-type(3):hover .sieraad1b {
+main #section3 #ulhome2 li:nth-of-type(3):hover .sieraad1b {
     opacity: 1;
 }
 
@@ -455,56 +480,8 @@ main #section3 #ulhome2 #lihome2:nth-of-type(3):hover .sieraad1b {
     opacity: 0;
 }
 
-
-/* ring img */
-main #section3 #ulhome2 #lihome2:nth-of-type(4) img:nth-of-type(1) {
-    display: block;
-    height: 45vw;
-    width: 31vw;
-    margin-left: 97vw;
-    margin-top: 2vw;
-}
-
-/* container 1  */
-main #section3 #ulhome2 #lihome2:nth-of-type(4) {
-    position: absolute;
-    width: 50%;
-}
-
-/* container hover */
-main #section3 #ulhome2 #lihome2:nth-of-type(4):hover .ring2 {
-    opacity: 1;
-}
-
-.ring2 {
-    position: absolute;
-    height: 45vw;
-    width: 31vw;
-    margin-left: 97vw;
-    margin-top: -45vw;
-    opacity: 0;
-}
-
-/* Prijs van ring */
-main #section3 #ulhome2 #lihome2:nth-of-type(4) p:nth-of-type(2) {
-    position: absolute;
-    font-size: 3.5vw;
-    margin-left: 99vw;
-    margin-top: 52.9vw;
-    width: 31vw;
-}
-
-/* title ring */
-main #section3 #ulhome2 #lihome2:nth-of-type(4) p:nth-of-type(1) {
-    position: absolute;
-    font-weight: 100;
-    font-size: 3vw;
-    margin-top: 48vw;
-    margin-left: 99vw;
-}
-
 /* gold 1 */
-main section:nth-of-type(3) #ulhome2 #lihome2:nth-of-type(4) div:nth-of-type(1) {
+main section:nth-of-type(3) #ulhome2 li:nth-of-type(3) div:nth-of-type(1) {
     background-image: linear-gradient(to bottom left, goldenrod, gold);
     border-style: solid;
     border-width: 1.4px;
@@ -515,12 +492,12 @@ main section:nth-of-type(3) #ulhome2 #lihome2:nth-of-type(4) div:nth-of-type(1) 
     border-radius: 250px;
     width: 2vw;
     height: 2vw;
-    margin-left: 119vw;
+    margin-left: 88vw;
     margin-top: 48vw;
 }
 
 /* silver 1 */
-main section:nth-of-type(3) #ulhome2 #lihome2:nth-of-type(4) div:nth-of-type(2) {
+main section:nth-of-type(3) #ulhome2 li:nth-of-type(3) div:nth-of-type(2) {
     background-image: linear-gradient(to top left, gray, gainsboro);
     border-style: solid;
     border-width: 1.4px;
@@ -531,7 +508,7 @@ main section:nth-of-type(3) #ulhome2 #lihome2:nth-of-type(4) div:nth-of-type(2) 
     border-radius: 250px;
     width: 2vw;
     height: 2vw;
-    margin-left: 123vw;
+    margin-left: 92vw;
     margin-top: 48vw;
 }
 
@@ -641,7 +618,6 @@ main section:nth-of-type(4) article:nth-of-type(2) a {
     color: black;
     padding: 1vw 4vw;
     border-radius: 2px;
-    cursor: pointer;
 }
 
 @keyframes flip-with-scale3 {
@@ -686,7 +662,7 @@ main section:nth-of-type(4) article:nth-of-type(2) p {
 /* HIER BEGINT DE OPMAAK VAN SECTION 5 */
 
 /* beige blok */
-main section:nth-of-type(5) articel:nth-of-type(1) {
+main section:nth-of-type(5) article:nth-of-type(1) {
     position: absolute;
     z-index: -1;
     font-size: 2vw;
@@ -699,12 +675,12 @@ main section:nth-of-type(5) articel:nth-of-type(1) {
 }
 
 /* beige p */
-main section:nth-of-type(5) articel:nth-of-type(1) p {
+main section:nth-of-type(5) article:nth-of-type(1) p {
     margin-top: -1vw;
 }
 
 /* beige a */
-main section:nth-of-type(5) articel:nth-of-type(1) a {
+main section:nth-of-type(5) article:nth-of-type(1) a {
     position: absolute;
     margin-top: 2vw;
     font-size: 2vw;
@@ -713,7 +689,6 @@ main section:nth-of-type(5) articel:nth-of-type(1) a {
     color: white;
     padding: 1vw 4vw;
     border-radius: 2px;
-    cursor: pointer;
 }
 
 /* fontbeige */
@@ -936,7 +911,7 @@ main section:nth-of-type(7) p span:nth-of-type(1) {
 /* HIER BEGINT DE OPMAAK VAN SECTION 8 */
 
 /* blog article */
-main section:nth-of-type(8) articel {
+main section:nth-of-type(8) article {
     position: absolute;
     background-color: #F2E1D9;
     margin-left: -2.3vw;
@@ -954,14 +929,14 @@ main section:nth-of-type(8) h3 {
 }
 
 /* blog p */
-main section:nth-of-type(8) articel p {
+main section:nth-of-type(8) article p {
     font-size: 2.3vw;
     margin-left: 2vw;
     margin-top: -2vw;
 }
 
 /* blog a */
-main section:nth-of-type(8) articel a {
+main section:nth-of-type(8) article a {
     position: absolute;
     margin-left: 2vw;
     margin-top: 4vw;
@@ -970,11 +945,10 @@ main section:nth-of-type(8) articel a {
     font-size: 2.7vw;
     padding: 1.7vw 2vw;
     border-radius: 2px;
-    cursor: pointer;
 }
 
 /* blog img */
-main section:nth-of-type(8) articel img {
+main section:nth-of-type(8) article img {
     position: absolute;
     height: 34vw;
     margin-left: 49.3vw;
@@ -1013,7 +987,6 @@ main section:nth-of-type(9) a {
     margin-top: -1vw;
     font-size: 3vw;
     color: pink;
-    cursor: pointer;
 }
 
 /* BRON: https://drive.google.com/file/d/1VqMm3oRHZkxV2hAAquJD5vuYmnlu1EdJ/view */
@@ -1037,7 +1010,7 @@ main section:nth-of-type(9) a {
     }
 }
 
-footer ul {
+footer ul:nth-of-type(1) {
     background-color: black;
     list-style-type: none;
     color: white;
@@ -1048,7 +1021,7 @@ footer ul {
     height: 130vw;
 }
 
-footer ul h5 {
+footer ul:nth-of-type(1) h5 {
     position: relative;
     font-size: 3.5vw;
     margin-top: -1vw;
@@ -1059,7 +1032,7 @@ footer ul h5 {
     border-bottom: solid 0.3px grey;
 }
 
-footer ul img {
+footer ul:nth-of-type(1) li img {
     position: relative;
     margin-left: 74vw;
     margin-top: 3vw;
@@ -1071,7 +1044,7 @@ footer ul img {
 }
 
 footer p {
-    margin-left: 4vw;
+    margin-left: -2vw;
     margin-top: 1vw;
 }
 
@@ -1079,8 +1052,15 @@ footer p:hover {
     text-decoration: underline;
 }
 
-footer articel img {
-    margin-left: -3vw;
+footer ul:nth-of-type(2) {
+    list-style-type: none;
+    color: white;
+    margin-top: -62vw;
+    margin-left: 5vw;
+}
+
+footer ul:nth-of-type(2) img {
+    margin-left: -13vw;
     z-index: 2;
     position: relative;
     margin-top: -7vw;
@@ -1091,14 +1071,16 @@ footer articel img {
     align-content: flex-start;
 }
 
-footer div img {
+footer img {
     height: 2vw;
     z-index: 1;
-    margin-left: 40vw;
-    margin-top: 10vw;
+    margin-left: 50vw;
+    margin-top: 4vw;
 }
 
 /* HIER BEGINT DE OPMAAK VAN DE DETAIL PAGINA */
+
+/* HIER BEGINT DE OPMAAK VAN DE DETAIL PAGINA HEADER */
 
 .greyline {
     background-color: lightgrey;
@@ -1107,6 +1089,8 @@ footer div img {
     margin-left: -2vw;
     width: 100vw;
 }
+
+/* HIER BEGINT DE OPMAAK VAN DE DETAIL PAGINA SECTION 1 */
 
 /* PRODUCTEN AANTAL */
 #headerdetail h3 {
@@ -1310,7 +1294,7 @@ main #section2d #articled1 div:nth-of-type(2) {
 }
 
 /* AFBEELDING BOLLETJE */
-main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(1) img:nth-of-type(1) {
+main #section2d #articled1 #uldetail1 li:nth-of-type(1) img:nth-of-type(1) {
     position: absolute;
     height: 74vw;
     margin-left: -11.5vw;
@@ -1318,14 +1302,14 @@ main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(1) img:nth-of-type(
 }
 
 /* CONTAINER */
-main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(1) {
+main #section2d #articled1 #uldetail1 li:nth-of-type(1) {
     position: absolute;
     width: 50%;
 }
 
 
 /* CONTAINER HOVER */
-main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(1):hover .bolletje2 {
+main #section2d #articled1 #uldetail1 li:nth-of-type(1):hover .bolletje2 {
     opacity: 1;
 }
 
@@ -1338,7 +1322,7 @@ main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(1):hover .bolletje2
 }
 
 /* AFBEELDING VLINDER */
-main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(2) img:nth-of-type(1) {
+main #section2d #articled1 #uldetail1 li:nth-of-type(2) img:nth-of-type(1) {
     position: absolute;
     height: 74vw;
     margin-left: 37.5vw;
@@ -1346,14 +1330,14 @@ main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(2) img:nth-of-type(
 }
 
 /* CONTAINER */
-main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(2) {
+main #section2d #articled1 #uldetail1 li:nth-of-type(2) {
     position: absolute;
     width: 50%;
 }
 
 
 /* CONTAINER HOVER */
-main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(2):hover .vlinder2 {
+main #section2d #articled1 #uldetail1 li:nth-of-type(2):hover .vlinder2 {
     opacity: 1;
 }
 
@@ -1367,7 +1351,7 @@ main #section2d #articled1 #uldetail1 #lidetail1:nth-of-type(2):hover .vlinder2 
 
 /* HIER BEGINT DE CSS VAN DE REST VAN DE PRODUCTEN */
 /* SIERAAD1 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) img:nth-of-type(1) {
+main #section2d #articled2 #uldetail2 li:nth-of-type(1) img:nth-of-type(1) {
     position: absolute;
     height: 71vw;
     margin-left: -11vw;
@@ -1375,14 +1359,14 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) img:nth-of-type(
 }
 
 /* CONTAINER */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) {
+main #section2d #articled2 #uldetail2 li:nth-of-type(1) {
     position: absolute;
     width: 50%;
 }
 
 
 /* CONTAINER HOVER */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1):hover .detailsieraad1b {
+main #section2d #articled2 #uldetail2 li:nth-of-type(1):hover .detailsieraad1b {
     opacity: 1;
 }
 
@@ -1395,7 +1379,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1):hover .detailsie
     opacity: 0;
 }
 
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) #svg {
+main #section2d #articled2 #uldetail2 li:nth-of-type(1) #svg {
     background-color: white;
     height: 6.7vw;
     width: 6.7vw;
@@ -1406,7 +1390,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) #svg {
 }
 
 /* heart svg */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) #Laag_2 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(1) #Laag_2 {
     position: absolute;
     left: 27.3vw;
     top: 91vw;
@@ -1414,19 +1398,19 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) #Laag_2 {
     height: 4vw;
     margin: 1vw;
     cursor: pointer;
-    fill: none;
+    fill: white;
     stroke: #1d1d1b;
     stroke-miterlimit: 10;
     stroke-width: 5px;
 }
 
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) #Laag_2:hover {
+main #section2d #articled2 #uldetail2 li:nth-of-type(1) #Laag_2:hover {
     stroke: #E9B9C4;
 }
 
 
 /* TITEL SIERAAD1 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) h5 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(1) h5 {
     position: absolute;
     font-size: 2.7vw;
     font-weight: 100;
@@ -1434,12 +1418,12 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) h5 {
     margin-top: 162vw;
 }
 
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) h5:hover {
+main #section2d #articled2 #uldetail2 li:nth-of-type(1) h5:hover {
     text-decoration: underline;
 }
 
 /* PRIJS SIERAAD1 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) p {
+main #section2d #articled2 #uldetail2 li:nth-of-type(1) p {
     position: absolute;
     font-size: 3vw;
     font-weight: 600;
@@ -1448,7 +1432,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) p {
 }
 
 /* GOLD SIERAAD1 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) #goldd1 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(1) #goldd1 {
     background-image: linear-gradient(to bottom left, goldenrod, gold);
     border-style: solid;
     border-width: 1.4px;
@@ -1465,7 +1449,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) #goldd1 {
 }
 
 /* ZILVER SIERAAD1 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) #zilverd1 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(1) #zilverd1 {
     background-image: linear-gradient(to top left, gray, gainsboro);
     border-style: solid;
     border-width: 1.4px;
@@ -1481,7 +1465,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(1) #zilverd1 {
 }
 
 /* SIERAAD 2 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) img:nth-of-type(1) {
+main #section2d #articled2 #uldetail2 li:nth-of-type(2) img:nth-of-type(1) {
     position: absolute;
     height: 71vw;
     margin-left: 39.5vw;
@@ -1489,14 +1473,14 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) img:nth-of-type(
 }
 
 /* CONTAINER */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) {
+main #section2d #articled2 #uldetail2 li:nth-of-type(2) {
     position: absolute;
     width: 50%;
 }
 
 
 /* CONTAINER HOVER */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2):hover .detailsieraad2b {
+main #section2d #articled2 #uldetail2 li:nth-of-type(2):hover .detailsieraad2b {
     opacity: 1;
 }
 
@@ -1509,7 +1493,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2):hover .detailsie
     opacity: 0;
 }
 
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) #svg {
+main #section2d #articled2 #uldetail2 li:nth-of-type(2) #svg {
     background-color: white;
     height: 6.7vw;
     width: 6.7vw;
@@ -1520,7 +1504,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) #svg {
 }
 
 /* heart svg */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) #Laag_2 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(2) #Laag_2 {
     position: absolute;
     left: 77.6vw;
     top: 91vw;
@@ -1528,18 +1512,18 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) #Laag_2 {
     height: 4vw;
     margin: 1vw;
     cursor: pointer;
-    fill: none;
+    fill: white;
     stroke: #1d1d1b;
     stroke-miterlimit: 10;
     stroke-width: 5px;
 }
 
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) #Laag_2:hover {
+main #section2d #articled2 #uldetail2 li:nth-of-type(2) #Laag_2:hover {
     stroke: #E9B9C4;
 }
 
 /* TITEL SIERAAD2 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) h5 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(2) h5 {
     position: absolute;
     font-size: 2.7vw;
     font-weight: 100;
@@ -1548,12 +1532,12 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) h5 {
     width: 100vw;
 }
 
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) h5:hover {
+main #section2d #articled2 #uldetail2 li:nth-of-type(2) h5:hover {
     text-decoration: underline;
 }
 
 /* PRIJS SIERAAD2 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) p {
+main #section2d #articled2 #uldetail2 li:nth-of-type(2) p {
     position: absolute;
     font-size: 3vw;
     font-weight: 600;
@@ -1563,7 +1547,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) p {
 }
 
 /* GOLD SIERAAD2 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) #goldd2 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(2) #goldd2 {
     background-image: linear-gradient(to bottom left, goldenrod, gold);
     border-style: solid;
     border-width: 1.4px;
@@ -1580,7 +1564,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) #goldd2 {
 }
 
 /* ZILVER SIERAAD2 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) #zilverd2 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(2) #zilverd2 {
     background-image: linear-gradient(to top left, gray, gainsboro);
     border-style: solid;
     border-width: 1.4px;
@@ -1604,7 +1588,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(2) #zilverd2 {
 }
 
 /* SIERAAD 3 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) img:nth-of-type(1) {
+main #section2d #articled2 #uldetail2 li:nth-of-type(3) img:nth-of-type(1) {
     position: absolute;
     height: 71vw;
     margin-left: -11vw;
@@ -1612,14 +1596,14 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) img:nth-of-type(
 }
 
 /* CONTAINER */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) {
+main #section2d #articled2 #uldetail2 li:nth-of-type(3) {
     position: absolute;
     width: 50%;
 }
 
 
 /* CONTAINER HOVER */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3):hover .detailsieraad3b {
+main #section2d #articled2 #uldetail2 li:nth-of-type(3):hover .detailsieraad3b {
     opacity: 1;
 }
 
@@ -1632,7 +1616,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3):hover .detailsie
     opacity: 0;
 }
 
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) #svg {
+main #section2d #articled2 #uldetail2 li:nth-of-type(3) #svg {
     background-color: white;
     height: 6.7vw;
     width: 6.7vw;
@@ -1643,7 +1627,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) #svg {
 }
 
 /* heart svg */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) #Laag_2 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(3) #Laag_2 {
     position: absolute;
     left: 27.2vw;
     top: 178vw;
@@ -1657,12 +1641,12 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) #Laag_2 {
     stroke-width: 5px;
 }
 
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) #Laag_2:hover {
+main #section2d #articled2 #uldetail2 li:nth-of-type(3) #Laag_2:hover {
     stroke: #E9B9C4;
 }
 
 /* TITEL SIERAAD3 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) h5 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(3) h5 {
     position: absolute;
     font-size: 2.7vw;
     font-weight: 100;
@@ -1670,12 +1654,12 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) h5 {
     margin-top: 249vw;
 }
 
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) h5:hover {
+main #section2d #articled2 #uldetail2 li:nth-of-type(3) h5:hover {
     text-decoration: underline;
 }
 
 /* PRIJS SIERAAD3 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) p {
+main #section2d #articled2 #uldetail2 li:nth-of-type(3) p {
     position: absolute;
     font-size: 3vw;
     font-weight: 600;
@@ -1684,7 +1668,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) p {
 }
 
 /* GOLD SIERAAD3 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) #goldd3 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(3) #goldd3 {
     background-image: linear-gradient(to bottom left, goldenrod, gold);
     border-style: solid;
     border-width: 1.4px;
@@ -1701,7 +1685,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) #goldd3 {
 }
 
 /* ZILVER SIERAAD3 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) #zilverd3 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(3) #zilverd3 {
     background-image: linear-gradient(to top left, gray, gainsboro);
     border-style: solid;
     border-width: 1.4px;
@@ -1725,7 +1709,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(3) #zilverd3 {
 }
 
 /* SIERAAD4 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) img {
+main #section2d #articled2 #uldetail2 li:nth-of-type(4) img {
     position: absolute;
     height: 71vw;
     width: 47.2vw;
@@ -1735,14 +1719,14 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) img {
 
 
 /* CONTAINER */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) {
+main #section2d #articled2 #uldetail2 li:nth-of-type(4) {
     position: absolute;
     width: 50%;
 }
 
 
 /* CONTAINER HOVER */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4):hover .detailsieraad4b {
+main #section2d #articled2 #uldetail2 li:nth-of-type(4):hover .detailsieraad4b {
     opacity: 1;
 }
 
@@ -1754,7 +1738,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4):hover .detailsie
     opacity: 0;
 }
 
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) #svg {
+main #section2d #articled2 #uldetail2 li:nth-of-type(4) #svg {
     background-color: white;
     height: 6.7vw;
     width: 6.7vw;
@@ -1765,7 +1749,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) #svg {
 }
 
 /* heart svg */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) #Laag_2 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(4) #Laag_2 {
     position: absolute;
     left: 77.6vw;
     top: 178vw;
@@ -1773,18 +1757,18 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) #Laag_2 {
     height: 4vw;
     margin: 1vw;
     cursor: pointer;
-    fill: none;
+    fill: white;
     stroke: #1d1d1b;
     stroke-miterlimit: 10;
     stroke-width: 5px;
 }
 
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) #Laag_2:hover {
+main #section2d #articled2 #uldetail2 li:nth-of-type(4) #Laag_2:hover {
     stroke: #E9B9C4;
 }
 
 /* TITEL SIERAAD4 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) h5 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(4) h5 {
     position: absolute;
     font-size: 2.7vw;
     font-weight: 100;
@@ -1793,12 +1777,12 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) h5 {
     width: 100vw;
 }
 
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) h5:hover {
+main #section2d #articled2 #uldetail2 li:nth-of-type(4) h5:hover {
     text-decoration: underline;
 }
 
 /* PRIJS SIERAAD4 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) p {
+main #section2d #articled2 #uldetail2 li:nth-of-type(4) p {
     position: absolute;
     font-size: 3vw;
     font-weight: 600;
@@ -1808,7 +1792,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) p {
 }
 
 /* GOLD SIERAAD4 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) #goldd4 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(4) #goldd4 {
     background-image: linear-gradient(to bottom left, goldenrod, gold);
     border-style: solid;
     border-width: 1.4px;
@@ -1825,7 +1809,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) #goldd4 {
 }
 
 /* ZILVER SIERAAD4 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) #zilverd4 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(4) #zilverd4 {
     background-image: linear-gradient(to top left, gray, gainsboro);
     border-style: solid;
     border-width: 1.4px;
@@ -1841,7 +1825,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(4) #zilverd4 {
 }
 
 /* KOPJE SIERAAD */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(5) img {
+main #section2d #articled2 #uldetail2 li:nth-of-type(5) img {
     position: absolute;
     height: 71vw;
     margin-left: -11vw;
@@ -1849,7 +1833,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(5) img {
 }
 
 /* KNOP KOPJE SIERAAD */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(5) a {
+main #section2d #articled2 #uldetail2 li:nth-of-type(5) a {
     position: absolute;
     z-index: 3;
     color: white;
@@ -1866,7 +1850,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(5) a {
 
 
 /* SIERAAD 5 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) img {
+main #section2d #articled2 #uldetail2 li:nth-of-type(6) img {
     position: absolute;
     height: 71vw;
     margin-left: 39.4vw;
@@ -1874,14 +1858,14 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) img {
 }
 
 /* CONTAINER */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) {
+main #section2d #articled2 #uldetail2 li:nth-of-type(6) {
     position: absolute;
     width: 50%;
 }
 
 
 /* CONTAINER HOVER */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6):hover .detailsieraad5b {
+main #section2d #articled2 #uldetail2 li:nth-of-type(6):hover .detailsieraad5b {
     opacity: 1;
 }
 
@@ -1894,7 +1878,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6):hover .detailsie
     opacity: 0;
 }
 
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #svg {
+main #section2d #articled2 #uldetail2 li:nth-of-type(6) #svg {
     background-color: white;
     height: 6.7vw;
     width: 6.7vw;
@@ -1905,7 +1889,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #svg {
 }
 
 /* heart svg */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #Laag_2 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(6) #Laag_2 {
     position: absolute;
     left: 77.6vw;
     top: 265.2vw;
@@ -1913,18 +1897,18 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #Laag_2 {
     height: 4vw;
     margin: 1vw;
     cursor: pointer;
-    fill: none;
+    fill: white;
     stroke: #1d1d1b;
     stroke-miterlimit: 10;
     stroke-width: 5px;
 }
 
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #Laag_2:hover {
+main #section2d #articled2 #uldetail2 li:nth-of-type(6) #Laag_2:hover {
     stroke: #E9B9C4;
 }
 
 /* TITEL SIERAAD5 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) h5 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(6) h5 {
     position: absolute;
     font-size: 2.7vw;
     font-weight: 100;
@@ -1933,12 +1917,12 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) h5 {
     width: 100vw;
 }
 
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) h5:hover {
+main #section2d #articled2 #uldetail2 li:nth-of-type(6) h5:hover {
     text-decoration: underline;
 }
 
 /* PRIJS SIERAAD5 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) p {
+main #section2d #articled2 #uldetail2 li:nth-of-type(6) p {
     position: absolute;
     font-size: 3vw;
     font-weight: 600;
@@ -1948,7 +1932,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) p {
 }
 
 /* GOLD SIERAAD5 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #goldd5 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(6) #goldd5 {
     background-image: linear-gradient(to bottom left, goldenrod, gold);
     border-style: solid;
     border-width: 1.4px;
@@ -1965,7 +1949,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #goldd5 {
 }
 
 /* ZILVER SIERAAD5 */
-main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #zilverd5 {
+main #section2d #articled2 #uldetail2 li:nth-of-type(6) #zilverd5 {
     background-image: linear-gradient(to top left, gray, gainsboro);
     border-style: solid;
     border-width: 1.4px;
@@ -1980,6 +1964,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #zilverd5 {
     margin-top: 335.5vw;
 }
 
+/* HIER BEGINT DE OPMAAK VAN DE DETAIL PAGINA SECTION 3 */
 #row6 {
     position: relative;
     border-style: solid;
@@ -2050,6 +2035,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #zilverd5 {
     font-weight: 100;
 }
 
+/* HIER BEGINT DE OPMAAK VAN DE DETAIL PAGINA SECTION 4 */
 #filterrow1 {
     position: relative;
     display: flex;
@@ -2095,6 +2081,7 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #zilverd5 {
     display: flex;
 }
 
+/* HIER BEGINT DE OPMAAK VAN DE DETAIL PAGINA SECTION 5 */
 #tekstd {
     background-color: #F6F5F5;
     margin-left: -2.3vw;
@@ -2125,9 +2112,9 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #zilverd5 {
     width: 93vw;
 }
 
-#tekstd .leesm {
+#tekstd #leesm {
     position: relative;
-    margin-left: 2vw;
+    margin-left: -2vw;
     top: 5vw;
     font-size: 3vw;
     font-weight: 10;
@@ -2144,7 +2131,13 @@ main #section2d #articled2 #uldetail2 #lidetail2:nth-of-type(6) #zilverd5 {
     cursor: pointer;
 }
 
+/* HIER BEGINT OP DE OPMAAK VAN DE DETAIL PAGINA FOOTER */
 #footerd {
-    margin-top: -22.3vw;
+    margin-top: 92.4vw;
     margin-left: -0.3vw;
+}
+
+main #section2d #articled2 #uldetail2 li #Laag_2 {
+    fill: pink;
+    stroke: black;
 }

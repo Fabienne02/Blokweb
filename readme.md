@@ -60,11 +60,12 @@ niet klaar.
 **Screenshot(s):**
 
 <img src="images/week1.jpg" width="370px" alt="week 1 screenshot">
-<img src="images/week3.jpg" width="370px" alt="week 3 screenshot">
 
 Het homescherm bevat nu mindere animaties bij de knoppen, en regenboog text
 waar het roze is. De kortings balk spreekt de gebruiker aan met een increase in size.
 En allle producten hebben een :hover afbeelding
+
+<img src="images/week3.jpg" width="370px" alt="week 3 screenshot">
 
 De detailscherm bevat een micro interactie met een add to favoriet systeem.
 Deze werkt zo dat je elk hartje kan toevoegen en weghalen zonder volgorde.
@@ -102,9 +103,10 @@ eerdere screenshots.
 **Screenshot(s):**
 
 <img src="images/week1.jpg" width="370px" alt="week 1 screenshot">
-<img src="images/week2.jpg" width="370px" alt="week 2 screenshot">
 
 Het homescherm is compleet met styling en kan animaties krijgen
+
+<img src="images/week2.jpg" width="370px" alt="week 2 screenshot">
 
 Het detailscherm is compleet met styling en kan animaties krijgen.
 De micro interactie mist nog, idee: Add to favorite systeem

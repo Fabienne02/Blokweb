@@ -59,7 +59,7 @@ niet klaar.
 
 **Screenshot(s):**
 
-<img src="images/week1.jpg" width="370px" alt="week 1 screenshot">
+<img src="images/Week1.jpg" width="370px" alt="week 3 screenshot">
 
 Het homescherm bevat nu mindere animaties bij de knoppen, en regenboog text
 waar het roze is. De kortings balk spreekt de gebruiker aan met een increase in size.
@@ -102,7 +102,7 @@ eerdere screenshots.
 
 **Screenshot(s):**
 
-<img src="images/week1.jpg" width="370px" alt="week 1 screenshot">
+<img src="images/Week1.jpg" width="370px" alt="week 2 screenshot">
 
 Het homescherm is compleet met styling en kan animaties krijgen
 
@@ -138,7 +138,7 @@ Wat minder goed ging was het gebruik van divjes en veeel veeeeeel classes.
 
 **Screenshot(s):**
 
-<img src="images/week1.jpg" width="370px" alt="week 1 screenshot">
+<img src="images/Week1.jpg" width="370px" alt="week 1 screenshot">
 
 Het homescherm is af kwa styling
 
@@ -180,5 +180,5 @@ Divjes en classes verbeteren.
 <img src="images/homescherm 2.png" width="375px" alt="Interface Homescherm"> 
 
 **Screenshot(s) van de tweede pagina (small screen):**
-<img src="images/detailpagina.jpg" width="375px" alt="Interface Detailpagina">
+<img src="images/detailpagina.png" width="375px" alt="Interface Detailpagina">
 

@@ -22,8 +22,8 @@ var timer = setInterval('change();', 5000);
 //BRON: https://www.youtube.com/watch?v=aNDHAEKvEl8
 
 
-const button1 = document.querySelectorAll("#lidetail2:nth-of-type(1) #svg, #lidetail2:nth-of-type(1) #Laag_2")
-var inDruk1 = document.querySelector("#lidetail2:nth-of-type(1) #Laag_2")
+const button1 = document.querySelectorAll("#uldetail2 li:nth-of-type(1) #svg, #uldetail2 li:nth-of-type(1) #Laag_2")
+var inDruk1 = document.querySelector("#uldetail2 li:nth-of-type(1) #Laag_2")
 var teller1 = document.querySelector("#spanheart"),
     count = 1;
 var min = 1;
@@ -38,24 +38,24 @@ function voegToe1() {
         count -= 1;
         teller1.innerHTML -= min;
 
-        document.querySelector("#lidetail2:nth-of-type(1) #Laag_2").style.fill = "none";
-        document.querySelector("#lidetail2:nth-of-type(1) #Laag_2").style.stroke = "black";
+        document.querySelector("#uldetail2 li:nth-of-type(1) #Laag_2").style.fill = "none";
+        document.querySelector("#uldetail2 li:nth-of-type(1) #Laag_2").style.stroke = "black";
 
         statusHeartEen = false;
 
     } else if (statusHeartEen == false) {
         count += 1;
         teller1.innerHTML = parseInt(teller1.innerHTML) + 1
-        document.querySelector("#lidetail2:nth-of-type(1) #Laag_2").style.fill = "pink";
-        document.querySelector("#lidetail2:nth-of-type(1) #Laag_2").style.stroke = "pink";
+        document.querySelector("#uldetail2 li:nth-of-type(1) #Laag_2").style.fill = "pink";
+        document.querySelector("#uldetail2 li:nth-of-type(1) #Laag_2").style.stroke = "pink";
 
         statusHeartEen = true;
     }
 
 }
 
-const button = document.querySelectorAll("#lidetail2:nth-of-type(2) #svg, #lidetail2:nth-of-type(2) #Laag_2")
-var inDruk = document.querySelector("#lidetail2:nth-of-type(2)#Laag_2")
+const button = document.querySelectorAll("#uldetail2 li:nth-of-type(2) #svg, #uldetail2 li:nth-of-type(2) #Laag_2")
+var inDruk = document.querySelector("#uldetail2 li:nth-of-type(2)#Laag_2")
 var min = 1;
 var statusHeartTwee = false
 
@@ -69,24 +69,24 @@ function voegToe() {
         count -= 1;
         teller1.innerHTML -= min;
 
-        document.querySelector("#lidetail2:nth-of-type(2) #Laag_2").style.fill = "none";
-        document.querySelector("#lidetail2:nth-of-type(2) #Laag_2").style.stroke = "black";
+        document.querySelector("#uldetail2 li:nth-of-type(2) #Laag_2").style.fill = "none";
+        document.querySelector("#uldetail2 li:nth-of-type(2) #Laag_2").style.stroke = "black";
 
         statusHeartTwee = false;
 
     } else if (statusHeartTwee == false) {
         count += 1;
          teller1.innerHTML = parseInt(teller1.innerHTML) + 1
-        document.querySelector("#lidetail2:nth-of-type(2) #Laag_2").style.fill = "pink";
-        document.querySelector("#lidetail2:nth-of-type(2) #Laag_2").style.stroke = "pink";
+        document.querySelector("#uldetail2 li:nth-of-type(2) #Laag_2").style.fill = "pink";
+        document.querySelector("#uldetail2 li:nth-of-type(2) #Laag_2").style.stroke = "pink";
 
         statusHeartTwee = true;
     }
 
 }
 
-const buttonq = document.querySelectorAll("#lidetail2:nth-of-type(3) #svg, #lidetail2:nth-of-type(3) #Laag_2")
-var inDrukq = document.querySelector("#lidetail2:nth-of-type(3) #Laag_2")
+const buttonq = document.querySelectorAll("#uldetail2 li:nth-of-type(3) #svg, #uldetail2 li:nth-of-type(3) #Laag_2")
+var inDrukq = document.querySelector("#uldetail2 li:nth-of-type(3) #Laag_2")
 var min = 1;
 var statusHeartDrie = false
 
@@ -100,24 +100,24 @@ function voegToeq() {
         count -= 1;
         teller1.innerHTML -= min;
 
-        document.querySelector("#lidetail2:nth-of-type(3) #Laag_2").style.fill = "none";
-        document.querySelector("#lidetail2:nth-of-type(3) #Laag_2").style.stroke = "black";
+        document.querySelector("#uldetail2 li:nth-of-type(3) #Laag_2").style.fill = "none";
+        document.querySelector("#uldetail2 li:nth-of-type(3) #Laag_2").style.stroke = "black";
 
         statusHeartDrie = false;
 
     } else if (statusHeartDrie == false) {
         count += 1;
          teller1.innerHTML = parseInt(teller1.innerHTML) + 1
-        document.querySelector("#lidetail2:nth-of-type(3) #Laag_2").style.fill = "pink";
-        document.querySelector("#lidetail2:nth-of-type(3) #Laag_2").style.stroke = "pink";
+        document.querySelector("#uldetail2 li:nth-of-type(3) #Laag_2").style.fill = "pink";
+        document.querySelector("#uldetail2 li:nth-of-type(3) #Laag_2").style.stroke = "pink";
 
         statusHeartDrie = true;
     }
 
 }
 
-const buttonz = document.querySelectorAll("#lidetail2:nth-of-type(4) #svg, #lidetail2:nth-of-type(4) #Laag_2")
-var inDrukz = document.querySelector("#lidetail2:nth-of-type(4) #Laag_2")
+const buttonz = document.querySelectorAll("#uldetail2 li:nth-of-type(4) #svg, #uldetail2 li:nth-of-type(4) #Laag_2")
+var inDrukz = document.querySelector("#uldetail2 li:nth-of-type(4) #Laag_2")
 var min = 1;
 var statusHeartVier = false
 
@@ -131,23 +131,23 @@ function voegToez() {
         count -= 1;
         teller1.innerHTML -= min;
 
-        document.querySelector("#lidetail2:nth-of-type(4) #Laag_2").style.fill = "none";
-        document.querySelector("#lidetail2:nth-of-type(4) #Laag_2").style.stroke = "black";
+        document.querySelector("#uldetail2 li:nth-of-type(4) #Laag_2").style.fill = "none";
+        document.querySelector("#uldetail2 li:nth-of-type(4) #Laag_2").style.stroke = "black";
 
         statusHeartVier = false;
 
     } else if (statusHeartVier == false) {
         count += 1;
          teller1.innerHTML = parseInt(teller1.innerHTML) + 1
-        document.querySelector("#lidetail2:nth-of-type(4) #Laag_2").style.fill = "pink";
-        document.querySelector("#lidetail2:nth-of-type(4) #Laag_2").style.stroke = "pink";
+        document.querySelector("#uldetail2 li:nth-of-type(4) #Laag_2").style.fill = "pink";
+        document.querySelector("#uldetail2 li:nth-of-type(4) #Laag_2").style.stroke = "pink";
 
         statusHeartVier = true;
     }
 
 }
 
-const buttonw = document.querySelectorAll("#lidetail2:nth-of-type(6) #svg, #lidetail2:nth-of-type(6) #Laag_2")
+const buttonw = document.querySelectorAll("#uldetail2 li:nth-of-type(6) #svg, #uldetail2 li:nth-of-type(6) #Laag_2")
 var inDrukw = document.querySelector("#lidetail2:nth-of-type(6) #Laag_2")
 var min = 1;
 var statusHeartVijf = false
@@ -162,16 +162,16 @@ function voegToew() {
         count -= 1;
         teller1.innerHTML -= min;
 
-        document.querySelector("#lidetail2:nth-of-type(6) #Laag_2").style.fill = "none";
-        document.querySelector("#lidetail2:nth-of-type(6) #Laag_2").style.stroke = "black";
+        document.querySelector("#uldetail2 li:nth-of-type(6) #Laag_2").style.fill = "none";
+        document.querySelector("#uldetail2 li:nth-of-type(6) #Laag_2").style.stroke = "black";
 
         statusHeartVijf = false;
 
     } else if (statusHeartVijf == false) {
         count += 1;
          teller1.innerHTML = parseInt(teller1.innerHTML) + 1
-        document.querySelector("#lidetail2:nth-of-type(6) #Laag_2").style.fill = "pink";
-        document.querySelector("#lidetail2:nth-of-type(6) #Laag_2").style.stroke = "pink";
+        document.querySelector("#uldetail2 li:nth-of-type(6) #Laag_2").style.fill = "pink";
+        document.querySelector("#uldetail2 li:nth-of-type(6) #Laag_2").style.stroke = "pink";
 
         statusHeartVijf = true;
     }

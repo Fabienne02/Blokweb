@@ -59,7 +59,16 @@ niet klaar.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="images/week1.jpg" width="370px" alt="week 1 screenshot">
+<img src="images/week3.jpg" width="370px" alt="week 3 screenshot">
+
+Het homescherm bevat nu mindere animaties bij de knoppen, en regenboog text
+waar het roze is. De kortings balk spreekt de gebruiker aan met een increase in size.
+En allle producten hebben een :hover afbeelding
+
+De detailscherm bevat een micro interactie met een add to favoriet systeem.
+Deze werkt zo dat je elk hartje kan toevoegen en weghalen zonder volgorde.
+Ook bevat elke afbeelding een :hover afbeelding
 
 ### Agenda voor meeting
 
@@ -67,8 +76,8 @@ niet klaar.
 
 | Fabienne      | lotte          | Dylen          | Ediz        |
 | ---            | ---             | ---          | ---              |
-| Geen vragen    | Hoe kan ik mijn | x            | geen vragen    |
-|                   footer coderen           
+| Geen vragen    | Hoe kan ik mijn footer coderen | x            | geen vragen    |
+|                              
                  | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
@@ -92,18 +101,23 @@ eerdere screenshots.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="images/week1.jpg" width="370px" alt="week 1 screenshot">
+<img src="images/week2.jpg" width="370px" alt="week 2 screenshot">
+
+Het homescherm is compleet met styling en kan animaties krijgen
+
+Het detailscherm is compleet met styling en kan animaties krijgen.
+De micro interactie mist nog, idee: Add to favorite systeem
 
 ### Agenda voor meeting
 
 -samen met je groepje opstellen-
 
-| Fabienne      | lotte          | Dylen    | Ediz        |
-| ---            | ---                | ---          | ---              |
-| Hoe moet ik mijn| Mijn slider doet| Hoe zet ik de  | How pak ik mijn     |
-  id's eruit halen  geen overflow     overflow uit     hamburger menu aan?
-| Position fixed    het niet             de slider 
-doet het niet     | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Fabienne                             | lotte          | Dylen    | Ediz        |
+| ---                                  | ---                | ---          | ---              |
+| Hoe moet ik mijn id's eruit halen    | Mijn slider doet geen overflow| Hoe zet ik de overflow uit   | How pak ik mijn   hamburger menu aan?  |                           
+| Position fixed doet het niet    
+  | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting
@@ -122,7 +136,9 @@ Wat minder goed ging was het gebruik van divjes en veeel veeeeeel classes.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="images/week1.jpg" width="370px" alt="week 1 screenshot">
+
+Het homescherm is af kwa styling
 
 ### Agenda voor meeting
 
@@ -130,10 +146,10 @@ Wat minder goed ging was het gebruik van divjes en veeel veeeeeel classes.
 
 | Fabienne      | lotte          | Dylen    | Ediz        |
 | ---            | ---                | ---          | ---              |
-| Footer style lukt
-niet              | Position fixed doet| Hoe maak je   | geen vragen    |
-| Position fixed    het niet             de slider 
-doet het niet     | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Footer style lukt niet  
+            | Position fixed doet het niet| Hoe maak je de slider    | geen vragen    |
+| Position fixed doet het niet               
+    | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting
@@ -145,7 +161,7 @@ Divjes en classes verbeteren.
 ## Breakdownschets (week 1)
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
-<img src="images/Breakoutschets.png" width="370px" alt="Breakdownschets Homescherm"> 
+<img src="images/Breakoutschets.png" width="370px" alt="Breakdownschets"> 
 
 
 

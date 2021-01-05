@@ -87,6 +87,8 @@ Na micro interactie eventuele verdere styling toevoegen.
 De detail pagina zag er goed uit, wel nog wat problemen 
 met het overnemen van de css in de detail pagina maar dit
 heb ik gelijk na het gesprek opgelost.
+De orginele site is wel veranderd en wijkt af van de 
+eerdere screenshots.
 
 **Screenshot(s):**
 
